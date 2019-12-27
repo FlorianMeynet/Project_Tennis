@@ -6,7 +6,60 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Joueur_competition
+    class Joueur_competition : Membre
     {
+        private double classement;
+        private int age;
+        private int point_joueur;
+        private int nb__match_jouer;
+        private int nb__match_gagner;
+
+
+        public Joueur_competition()
+        {
+            this.classement=0;
+            this.age=0;
+            this.point_joueur=0;
+            this.nb__match_gagner=0;
+            this.nb__match_jouer=0;
+
+        }
+        public Joueur_competition(string nom,string prenom,DateTime naissance,string adresse,long telephone,bool sexe,string ville,bool paiement,int c,int a,int p , int nb_j , int nb_g)
+        : base(nom,
+        {
+            this.classement=c;
+            this.age=a;
+            this.point_joueur=p;
+            this.nb__match_gagner=nb_g;
+            this.nb__match_jouer=nb_j;
+
+        }
+
+        public int Classement
+        {
+            get { return (this.classement); }
+            set { this.classement = value; }
+        }
+        public int Age
+        {
+            get { return (this.age); }
+            set { this.age = value; }
+        }
+        public int Point_joueur
+        {
+            get { return (this.point_joueur); }
+            set { this.point_joueur = value; }
+        }
+        public int Nb_match_jouer
+        {
+            get { return (this.nb__match_jouer); }
+            set { this.nb__match_jouer = value; }
+        }
+        public int Nb_match_gagner
+        {
+            get { return (this.nb__match_gagner); }
+            set { this.nb__match_gagner = value; }
+        }
+
     }
 }

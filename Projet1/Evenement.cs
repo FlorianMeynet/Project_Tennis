@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Evenement
+    abstract class Evenement
     {
+        private DateTime date;
+
+        public DateTime Date
+        {
+             get { return (this.date ); }
+            set { this.date = value; }
+        }
+
+        public Evenement(DateTime d)
+        {
+            this.date=d;
+        }
+
     }
 }

@@ -8,5 +8,6 @@ namespace Projet1
 {
     class Joueur_loisir
     {
+        
     }
 }
