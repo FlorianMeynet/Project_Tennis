@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FFFF0303" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="287" Margin="45,105,0,0" VerticalAlignment="Top" Width="221">
+            <Button Content="Membres" HorizontalAlignment="Left" Height="47" Margin="-1,1,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Button_Click_1">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-1.005"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-0.482"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button Content="Compétitions" HorizontalAlignment="Left" Height="43" Margin="0,86,0,0" VerticalAlignment="Top" Width="221" Click="Button_Click" Background="#FFFDFF00" FontFamily="Segoe UI Black"/>
+            <Button Content="Statistiques" HorizontalAlignment="Left" Height="43" Margin="0,164,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Button_Click_2"/>
+            <Button Content="Autres" HorizontalAlignment="Left" Height="43" Margin="0,241,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" BorderBrush="#FFBCBCBC" Foreground="#FF060606" FontFamily="Segoe UI Black" Click="Button_Click_3"/>
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="297" Margin="407,78,0,0" VerticalAlignment="Top" Width="271" Source="72945.png"/>
+        <Label Content="Club de Tennis " HorizontalAlignment="Left" Height="84" Margin="10,10,0,0" VerticalAlignment="Top" Width="337" FontSize="48" Background="{x:Null}" Foreground="White" FontFamily="Roboto"/>
     </Grid>
 </Window>
+
+    

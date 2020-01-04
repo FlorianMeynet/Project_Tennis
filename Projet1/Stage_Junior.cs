@@ -13,13 +13,13 @@ namespace Projet1
 
 
 
-        public Stage_Junior(bool p ,int a_n , string t ,int a, int n, List<string> l) : base(t,a,n,l)
+        public Stage_Junior(DateTime d , int a, int n, List<Joueur_competition> l, bool p, int a_n) : base(d,a,n,l)
         {
             this.paiement = p;
             this.age_necessaire=a_n;
 
         }
-        public int Paiement
+        public bool Paiement
         {
             get { return (this.paiement); }
             set { this.paiement = value; }
@@ -53,7 +53,7 @@ namespace Projet1
 
                 }
             }
-            if(Liste_pas_age==null){retrun("Tous le monde a le bon age");}
+            if(Liste_pas_age==null){return("Tout le monde a le bon age");}
             else{return(Affichage_liste(Liste_pas_age));}
         }
 

@@ -22,10 +22,9 @@ namespace Projet1
             this.point_joueur=0;
             this.nb__match_gagner=0;
             this.nb__match_jouer=0;
-
         }
         public Joueur_competition(string nom,string prenom,DateTime naissance,string adresse,long telephone,bool sexe,string ville,bool paiement,int c,int a,int p , int nb_j , int nb_g)
-        : base(nom,
+        : base(nom,prenom,naissance,adresse,telephone,sexe,ville,paiement)
         {
             this.classement=c;
             this.age=a;
@@ -35,16 +34,12 @@ namespace Projet1
 
         }
 
-        public int Classement
+        public double Classement
         {
             get { return (this.classement); }
             set { this.classement = value; }
         }
-        public int Age
-        {
-            get { return (this.age); }
-            set { this.age = value; }
-        }
+
         public int Point_joueur
         {
             get { return (this.point_joueur); }

@@ -19,7 +19,7 @@ namespace Projet1
             this.niveau = 0;
             this.liste_eleve = null;
         }
-        public Cours_Stage(int a, int n, List<string> l)
+        public Cours_Stage(int a, int n, List<Joueur_competition> l)
         {
             this.age = a;
             this.niveau = n;
@@ -35,7 +35,7 @@ namespace Projet1
             get { return (this.niveau); }
             set { this.niveau = value; }
         }
-        public List<string> Liste_eleve
+        public List<Joueur_competition> Liste_eleve
         {
             get { return (this.liste_eleve); }
             set { this.liste_eleve = value; }

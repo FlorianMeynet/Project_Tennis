@@ -35,6 +35,14 @@ namespace Projet1
             get { return this.telephone; }
         }
 
+        public Identite()
+        {
+            this.nom = "";
+            this.prenom = "";
+            this.naissance =new DateTime();
+            this.adresse = "";
+            this.telephone = -1;
+        }
         public Identite(string nom, string prenom, DateTime naissance, string adresse, long telephone)
         {
             this.nom = nom;
