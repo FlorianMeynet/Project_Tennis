@@ -11,6 +11,7 @@ namespace Projet1
         private DateTime date_compet;
         private int point_equipe;
         private List<Joueur_competition> list_joueur_equipe;
+        private List<Joueur_competition> list_deja_jouer;
 
         public Equipe_competition(DateTime date)
         {
@@ -29,10 +30,22 @@ namespace Projet1
             set {this.point_equipe=value;}
         }
 
-        public void ajout_joueur(Joueur_competition a)
+        public List<Joueur_competition> List_deja_jouer
         {
-             //on ne peut pas savoir si le joueur a dautre compet
-
+            get { return this.list_deja_jouer; }
+            set { this.list_deja_jouer = value; }
         }
+
+        public void Ajout_joueur(Joueur_competition a)
+        {
+            //on ne peut pas savoir si le joueur a dautre compet
+            qdzdqlist_joueur_equipe.Add(a);
+        }
+
+        public void Ajout_deja_joueur(Joueur_competition b)
+        {
+            list_deja_jouer.Add(b);
+        }
+
     }
 }

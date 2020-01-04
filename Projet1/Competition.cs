@@ -10,6 +10,8 @@ namespace Projet1
     {
         private string lieu;
         private List<Joueur_competition[]> liste_equipe;
+        List<List<Joueur_competition>> liste_equipe_ok = null;
+        List<Joueur_competition> liste_joueur_ok = null;
         private int[] cat_age;
         private int nb_jours;
         private string nom;
@@ -20,14 +22,14 @@ namespace Projet1
         {
             this.lieu = "";
             this.liste_equipe = null;
-            this.cat_age = 0;
+            this.cat_age = null;
             this.nb_jours = 0;
             this.nom = "";
             this.niveau = 0;
             this.nb_j_min = 0;
 
         }
-        public Competition(string l, List<Joueur_competition[]> l_e,double c, int nb_j,string n,int niv, int nb_j_m)
+        public Competition(string l, List<Joueur_competition[]> l_e, int[] c, int nb_j, string n, int niv, int nb_j_m)
         {
             this.lieu = l;
             this.liste_equipe = l_e;
@@ -48,7 +50,18 @@ namespace Projet1
             get { return (this.liste_equipe); }
             set { this.liste_equipe = value; }
         }
-        public double Cat_age
+
+        public List<List<Joueur_competition>> Liste_equipe_ok
+        {
+            get { return (this.liste_equipe_ok); }
+            set { this.liste_equipe_ok = value; }
+        }
+        public List<Joueur_competition> Liste_joueur_ok
+        {
+            get { return (this.liste_joueur_ok); }
+            set { this.liste_joueur_ok = value; }
+        }
+        public int[] Cat_age
         {
             get { return (this.cat_age); }
             set { this.cat_age = value; }
@@ -58,7 +71,7 @@ namespace Projet1
             get { return (this.nb_jours); }
             set { this.nb_jours = value; }
         }
-        public string Nom 
+        public string Nom
         {
             get { return (this.nom); }
             set { this.nom = value; }
@@ -76,14 +89,38 @@ namespace Projet1
 
         public void Compatibilite_age()
         {
-            foreach (joueur in liste_equipe)
+            foreach (Joueur_competition[] list_joueur in liste_equipe)
             {
-                if(joueur.Age <= cat_age[0] || joueur.Age>= cat_age[1])
+                liste_joueur_ok = null;
+                foreach (Joueur_competition joueur in list_joueur)
                 {
-                    liste_equipe.Remove(joueur);
+                    if (joueur.Age <= cat_age[0] || joueur.Age <= cat_age[1])
+                    {
+                        liste_joueur_ok.Add(joueur);
+                    }
+
+
                 }
+                liste_equipe_ok.Add(liste_joueur_ok);
             }
         }
 
+        public int Nb_joueur
+        {
+            get
+            {
+                int conteur = 0;
+
+                foreach (List<Joueur_competition> list_joueur in liste_equipe_ok)
+                {
+
+                    conteur += list_joueur.Count;
+                }
+                return (conteur);
+            }
+
+
+
+        }
     }
 }
