@@ -10,8 +10,8 @@ namespace Projet1
     {
         private Joueur_competition joueur_a;
         private Joueur_competition joueur_b;
-        private List<int[]> score;
-        private char resultat;
+        private List<int> score;
+        private string resultat;
 
 
         public Match_simple()
@@ -39,30 +39,32 @@ namespace Projet1
             get{return(this.joueur_b);}
             set{this.joueur_b=value;}
         }
-        public List<int[]> Score
+        public List<int> Score
         {
             get{return(this.score);}
             set{this.score=value;}
         }
-        public char Resultat
+        public string Resultat
         {
             get{return(this.resultat);}
-            set{this.resultat=value;}
+            set{this.resultat=value;}  
         }
 
 
         public void Comptage_score(int set_j_a, int set_j_b )
         {
-            this.Score[0].Add(set_j_a);
-            this.Score[1].Add(set_j_b);
+            this.score[0]=(set_j_a);
+            this.score[1]=(set_j_b);
 
         }
-        public char Resultat_match()
+        public String Resultat_match()
         {
-            if(this.Score[0]> this.Score[1]){return(A);}
-            else{return (B);}
+            if(this.Score[0]> this.Score[1]){return("Le joueur "+joueur_a.Nom+" a gagné");}
+            else{return ("Le joueur " + joueur_b.Nom + " a gagné");}
 
         }
+
+
 
 
     }

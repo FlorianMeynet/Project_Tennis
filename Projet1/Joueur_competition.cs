@@ -15,7 +15,7 @@ namespace Projet1
         private int nb__match_gagner;
 
 
-        public Joueur_competition()
+        public Joueur_competition(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement) : base(nom, prenom, naissance, adresse, telephone, sexe, ville, paiement)
         {
             this.classement=0;
             this.age=0;
@@ -24,8 +24,7 @@ namespace Projet1
             this.nb__match_jouer=0;
 
         }
-        public Joueur_competition(string nom,string prenom,DateTime naissance,string adresse,long telephone,bool sexe,string ville,bool paiement,int c,int a,int p , int nb_j , int nb_g)
-        : base(nom,
+        public Joueur_competition(string nom,string prenom,DateTime naissance,string adresse,long telephone,bool sexe,string ville,bool paiement,int c,int a,int p , int nb_j , int nb_g) : base(nom,prenom,naissance,adresse,telephone,sexe,ville,paiement)
         {
             this.classement=c;
             this.age=a;
@@ -35,12 +34,12 @@ namespace Projet1
 
         }
 
-        public int Classement
+        public double Classement
         {
             get { return (this.classement); }
             set { this.classement = value; }
         }
-        public int Age
+        public new int Age
         {
             get { return (this.age); }
             set { this.age = value; }
