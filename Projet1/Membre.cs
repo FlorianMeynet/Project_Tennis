@@ -12,6 +12,7 @@ namespace Projet1
         private string ville;
         private bool paiement;
 
+
         public Membre()
         {
             this.sexe = true;

@@ -13,6 +13,7 @@ namespace Projet1
         private int point_joueur;
         private int nb__match_jouer;
         private int nb__match_gagner;
+        private List<DateTime> date_compet;
 
 
         public Joueur_competition(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement) : base(nom, prenom, naissance, adresse, telephone, sexe, ville, paiement)
@@ -43,6 +44,12 @@ namespace Projet1
         {
             get { return (this.age); }
             set { this.age = value; }
+        }
+
+        public List<DateTime> Date_compet
+        {
+            get { return this.date_compet; }
+            set { this.date_compet = value; }
         }
         public int Point_joueur
         {

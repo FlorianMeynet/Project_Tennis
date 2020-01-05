@@ -50,6 +50,7 @@ namespace Projet1
                     foreach(List<Joueur_competition> joueur in this.Liste_equipe_ok)
                     {
 
+                        
                     }
                 }
             } 
