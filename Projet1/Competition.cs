@@ -15,7 +15,7 @@ namespace Projet1
         private int[] cat_age;
         private int nb_jours;
         private string nom;
-        private int niveau;
+        private double classement_max;
         private int nb_j_min;
 
         public Competition()
@@ -25,18 +25,18 @@ namespace Projet1
             this.cat_age = null;
             this.nb_jours = 0;
             this.nom = "";
-            this.niveau = 0;
+            this.classement_max = 0;
             this.nb_j_min = 0;
 
         }
-        public Competition(string l, List<Joueur_competition[]> l_e, int[] c, int nb_j, string n, int niv, int nb_j_m)
+        public Competition(string l, List<Joueur_competition[]> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m)
         {
             this.lieu = l;
             this.liste_equipe = l_e;
             this.cat_age = c;
             this.nb_jours = nb_j;
             this.nom = n;
-            this.niveau = niv;
+            this.classement_max = niv;
             this.nb_j_min = nb_j_m;
 
         }
@@ -76,10 +76,10 @@ namespace Projet1
             get { return (this.nom); }
             set { this.nom = value; }
         }
-        public int Niveau
+        public double Classement_max
         {
-            get { return (this.niveau); }
-            set { this.niveau = value; }
+            get { return (this.classement_max); }
+            set { this.classement_max = value; }
         }
         public int Nb_j_min
         {

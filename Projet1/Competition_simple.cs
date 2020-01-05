@@ -61,5 +61,17 @@ namespace Projet1
         {
             return (this.Nb_joueur >= this.Nb_j_min);
         }
+
+        public bool Compet_end()
+        {
+            foreach(Match_simple match in this.liste_match_simple)
+            {
+                if (match.Match_simple_end() == false)
+                {
+                    return (false);
+                }
+            }
+            return (true);
+        }
     }
 }

@@ -54,11 +54,16 @@ namespace Projet1
             this.score[1] = (set_j_b);
 
         }
-        public String Resultat_match()
+        public String Score_match()
         {
             if (this.Score[0] > this.Score[1]) { return ("Le joueur " + equipe_a.Nom_team + " a gagné"); }
             else { return ("Le joueur " + equipe_b.Nom_team + " a gagné"); }
 
+        }
+        public bool Match_double_end()
+        {
+            if (this.score[0] == 2 || this.score[1] == 2) { return (true); } //On part du principe qu'un match se joue en 2 set gagnant
+            else { return (false); }
         }
 
     }
