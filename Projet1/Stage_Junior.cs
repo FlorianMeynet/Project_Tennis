@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Stage_Junior : Evenement , Cours_Stage
+    class Stage_Junior : Cours_Stage
     {
         private bool paiement;
         private int age_necessaire;
 
 
 
-        public Stage_Junior(DateTime d , int a, int n, List<Joueur_competition> l, bool p, int a_n) : base(d,a,n,l)
+        public Stage_Junior(int a, int n, List<Joueur_competition> l, bool p, int a_n) : base(a,n,l)
         {
             this.paiement = p;
             this.age_necessaire=a_n;
@@ -30,7 +30,7 @@ namespace Projet1
             set { this.age_necessaire = value; }
         }
 
-        public string Affichage_liste(List<> liste)
+        public string Affichage_liste(List<Joueur_competition> liste)
         {
             int t =Liste_eleve.Count();
             string s="";
@@ -40,10 +40,10 @@ namespace Projet1
             }
             return(s);
         }
-        public bool Test_age()
+        public string Test_age()
         {
             int t =Liste_eleve.Count();
-            List<string> Liste_pas_age = new List<string>();
+            List<Joueur_competition> Liste_pas_age = new List<Joueur_competition>();
             for(int i=0;i<t;i++)
             {
                 if(this.Liste_eleve[i].Age < age_necessaire)
