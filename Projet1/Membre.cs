@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Membre : Identite
+    class Membre : Identite , IComparable
     {
         private bool sexe; //renvoie true si c'est une femme
         private string ville;
@@ -25,7 +25,6 @@ namespace Projet1
             this.ville = ville;
             this.paiement = paiement;
         }
-
         public bool adulte()
         {
             bool rep = false;
@@ -35,6 +34,22 @@ namespace Projet1
             }
             return rep;
         }
+        public bool Sexe
+        {
+            get { return this.sexe; }
+            set { this.sexe = value; }
+        }
+        public string Ville
+        {
+            get { return this.ville; }
+            set { this.ville = value; }
+        }
+        public bool Paiement
+        {
+            get { return this.paiement; }
+            set { this.paiement = value; }
+        }
+
         public override string ToString()
         {
             return (base.ToString() + "\n Sexe : " + this.sexe + "\n Ville : " + this.ville + "\n Paiement : " + this.paiement);
@@ -69,6 +84,34 @@ namespace Projet1
                 rep += 20;
             }
             return rep;
+        }
+
+        public int Compareto(Object val)
+        {
+            Membre valA = (Membre)val;
+            return (this.Nom.CompareTo(valA.Nom));
+        }
+
+        public int CompareP(Membre b, Membre c)
+        {
+            return (b.Prenom.CompareTo(b.Prenom));
+        }
+
+        public static int CompareD(Membre b, Membre c)
+        {
+            return (b.Naissance.CompareTo(c.Naissance));
+        }
+        public static int CompareS(Membre b, Membre c)
+        {
+            return (b.Sexe.CompareTo(c.Sexe));
+        }
+        public static int CompareV(Membre b, Membre c)
+        {
+            return (b.Ville.CompareTo(c.Ville));
+        }
+        public static int ComparePA(Membre b, Membre c)
+        {
+            return (b.Paiement.CompareTo(c.Paiement));
         }
     }
 }

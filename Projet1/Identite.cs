@@ -17,22 +17,27 @@ namespace Projet1
         public string Nom
         {
             get { return this.nom; }
+            set { this.nom = value; }
         }
         public string Prenom
         {
             get { return this.prenom; }
+            set { this.prenom = value; }
         }
         public DateTime Naissance
         {
             get { return this.naissance; }
+            set { this.naissance = value; }
         }
         public string Adresse
         {
             get { return this.adresse; }
+            set { this.adresse = value; }
         }
         public long Telephone
         {
             get { return this.telephone; }
+            set { this.telephone = value; }
         }
 
         public Identite()
