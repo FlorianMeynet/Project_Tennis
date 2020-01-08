@@ -44,7 +44,7 @@ namespace Projet1
 
         public void Creation_List_Match(Equipe_competition equipe_b)
         {
-            if (Assez_de_joueur() == true and equipe_b.Assez_de_joueur()==true)
+            if (Assez_de_joueur() == true )
             {
                 for(int n = 0; n< nb_match; n++)
                 {
