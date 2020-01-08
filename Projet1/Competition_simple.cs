@@ -8,6 +8,7 @@ namespace Projet1
 {
     class Competition_simple : Competition
     {
+        Random rnd = new Random();
         private int nb_match;
         private List<char> resultat_match;
         private List<Match_simple> liste_match_simple;
@@ -41,19 +42,15 @@ namespace Projet1
             set { this.liste_match_simple = value; }
         }
 
-        public void Creation_List_Match()
+        public void Creation_List_Match(Equipe_competition equipe_b)
         {
-            if (Assez_de_joueur() == true)
+            if (Assez_de_joueur() == true and equipe_b.Assez_de_joueur()==true)
             {
                 for(int n = 0; n< nb_match; n++)
                 {
-                    foreach(List<Joueur_competition> joueur in this.Liste_equipe_ok)
-                    {
-
-                        
-                    }
+                    
                 }
-            } 
+            }
         }
 
 

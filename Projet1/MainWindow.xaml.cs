@@ -24,5 +24,18 @@ namespace Projet1
         {
             InitializeComponent();
         }
+        private void Membres(object sender,RoutedEventArgs e)
+        {
+            Membres a = new Membres();
+            a.Show();
+            this.Close();
+        }
+
+        private void Sattistiques(object sender, RoutedEventArgs e)
+        {
+            Sattistiques a = new Sattistiques();
+            a.Show();
+            this.Close();
+        }
     }
 }
