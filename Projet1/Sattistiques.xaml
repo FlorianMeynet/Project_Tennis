@@ -17,6 +17,7 @@
         <Label Content="Le nombre moyen de joueurs du club par compétition : " HorizontalAlignment="Left" Height="37" Margin="28,55,0,0" VerticalAlignment="Top" Width="391" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
         <Button Content="Résultats du club par année" HorizontalAlignment="Left" Margin="28,325,0,0" VerticalAlignment="Top" Width="275" Height="59" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="ResultatJoueur"/>
         <Button Content="Résultats des joueurs" HorizontalAlignment="Left" Margin="28,223,0,0" VerticalAlignment="Top" Width="275" Height="59" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="ResultatClub"/>
+        <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
 
     </Grid>
 </Window>

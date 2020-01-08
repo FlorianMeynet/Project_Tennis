@@ -36,5 +36,11 @@ namespace Projet1
             a.Show();
             this.Close();
         }
+        private void Precedent(object sender, RoutedEventArgs e)
+        {
+            MainWindow a = new MainWindow();
+            a.Show();
+            this.Close();
+        }
     }
 }

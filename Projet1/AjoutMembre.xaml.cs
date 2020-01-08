@@ -23,5 +23,13 @@ namespace Projet1
         {
             InitializeComponent();
         }
+        private void Precedent(object sender, RoutedEventArgs e)
+        {
+            Membres a = new Membres();
+            a.Show();
+            this.Close();
+        }
+
     }
 }
+

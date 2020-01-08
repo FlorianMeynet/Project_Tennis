@@ -23,5 +23,12 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void Precedent(object sender, RoutedEventArgs e)
+        {
+            Sattistiques a = new Sattistiques();
+            a.Show();
+            this.Close();
+        }
     }
 }
