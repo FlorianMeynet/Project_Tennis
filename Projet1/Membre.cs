@@ -35,6 +35,10 @@ namespace Projet1
             }
             return rep;
         }
+        public override string ToString()
+        {
+            return (base.ToString() + "\n Sexe : " + this.sexe + "\n Ville : " + this.ville + "\n Paiement : " + this.paiement);
+        }
         public int prix(string villeclub, bool competition)
         {
             int rep = 0;

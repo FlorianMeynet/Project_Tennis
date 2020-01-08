@@ -19,12 +19,11 @@ namespace Projet1
             this.score = null;
 
         }
-        public Match_double(Equipe_competition a, Equipe_competition b, List<int> s, char r)
+        public Match_double(Equipe_competition a, Equipe_competition b)
         {
             this.equipe_a = a;
             this.equipe_b = b;
-            this.score = s;
-            this.resultat = r;
+            
         }
 
         public Equipe_competition Equipe_a

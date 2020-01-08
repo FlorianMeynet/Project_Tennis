@@ -60,6 +60,10 @@ namespace Projet1
                 age--;
             return age;
         }
+        public override string ToString()
+        {
+            return ("Nom : " + this.nom + "\nPrénon : "+ this.prenom+"\n Date de Naissance : "+this.naissance+"\n Adresse : "+this.adresse+"\n Telephone : "+this.telephone);
+        }
 
 
     }

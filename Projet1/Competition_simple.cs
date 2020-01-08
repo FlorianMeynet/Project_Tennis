@@ -20,11 +20,12 @@ namespace Projet1
             this.resultat_match = null;
         }
 
-        public Competition_simple(int nb_match, string l, List<Joueur_competition[]> l_e, int[] c, int nb_j, string n, int niv, int nb_j_m): base(l,l_e,c,nb_j,n,niv,nb_j_m)
+        public Competition_simple(int nb_match, string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, int niv, int nb_j_m): base(l,l_e,c,nb_j,n,niv,nb_j_m)
         {
             this.nb_match = nb_match;
             this.resultat_match = null;
             this.liste_match_simple = null;
+            this.Nb_match_total += this.nb_match;
         }
         public int Nb_match
         {
@@ -44,14 +45,18 @@ namespace Projet1
 
         public void Creation_List_Match(Equipe_competition equipe_b)
         {
+            Random generateur = new Random();
             if (Assez_de_joueur() == true )
             {
                 for(int n = 0; n< nb_match; n++)
                 {
-                    
+                    int nb = generateur.Next(1, equipe_b.List_joueur_equipe.Count());
+                    int na = generateur.Next(1, this.Liste_joueur_ok.Count());
+                    Match_simple ma = new Match_simple(equipe_b.Liste_joueur_ok[nb], this.Liste_joueur_ok[na]);
+                    Liste_match_simple.Add(ma);
                 }
             }
-        }
+        } 
         public bool Assez_de_joueur()
         {
             return (this.Nb_joueur >= this.Nb_j_min);
