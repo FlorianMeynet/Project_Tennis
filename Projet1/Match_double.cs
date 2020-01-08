@@ -10,7 +10,7 @@ namespace Projet1
     {
         private Equipe_competition equipe_a;
         private Equipe_competition equipe_b;
-        private List<int[]> score;
+        private List<int> score;
         private char resultat;
         public Match_double()
         {
@@ -19,7 +19,7 @@ namespace Projet1
             this.score = null;
 
         }
-        public Match_double(Equipe_competition a, Equipe_competition b, List<int[]> s, char r)
+        public Match_double(Equipe_competition a, Equipe_competition b, List<int> s, char r)
         {
             this.equipe_a = a;
             this.equipe_b = b;
@@ -37,7 +37,7 @@ namespace Projet1
             get { return (this.equipe_b); }
             set { this.equipe_b = value; }
         }
-        public List<int[]> Score
+        public List<int> Score
         {
             get { return (this.score); }
             set { this.score = value; }
@@ -48,6 +48,23 @@ namespace Projet1
             set { this.resultat = value; }
         }
 
+        public void Comptage_score(int set_j_a, int set_j_b)
+        {
+            this.score[0] = (set_j_a);
+            this.score[1] = (set_j_b);
+
+        }
+        public String Score_match()
+        {
+            if (this.Score[0] > this.Score[1]) { return ("Le joueur " + equipe_a.Nom_team + " a gagné"); }
+            else { return ("Le joueur " + equipe_b.Nom_team + " a gagné"); }
+
+        }
+        public bool Match_double_end()
+        {
+            if (this.score[0] == 2 || this.score[1] == 2) { return (true); } //On part du principe qu'un match se joue en 2 set gagnant
+            else { return (false); }
+        }
 
     }
 }

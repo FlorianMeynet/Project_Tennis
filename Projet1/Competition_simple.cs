@@ -50,6 +50,7 @@ namespace Projet1
                     foreach(List<Joueur_competition> joueur in this.Liste_equipe_ok)
                     {
 
+                        
                     }
                 }
             } 
@@ -59,6 +60,18 @@ namespace Projet1
         public bool Assez_de_joueur()
         {
             return (this.Nb_joueur >= this.Nb_j_min);
+        }
+
+        public bool Compet_end()
+        {
+            foreach(Match_simple match in this.liste_match_simple)
+            {
+                if (match.Match_simple_end() == false)
+                {
+                    return (false);
+                }
+            }
+            return (true);
         }
     }
 }
