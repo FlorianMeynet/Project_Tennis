@@ -24,9 +24,36 @@ namespace Projet1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AjoutMembre(object sender, RoutedEventArgs e)
         {
+            AjoutMembre a = new AjoutMembre();
+            a.Show();
+            this.Close();
+        }
 
+        private void SupprimerMembre(object sender, RoutedEventArgs e)
+        {
+            SupprimerMembre a = new SupprimerMembre();
+            a.Show();
+            this.Close();
+        }
+        private void ModifierMembre(object sender, RoutedEventArgs e)
+        {
+            Modifier_Membre a = new Modifier_Membre();
+            a.Show();
+            this.Close();
+        }
+        private void ListeMembre(object sender, RoutedEventArgs e)
+        {
+            ListMembre a = new ListMembre();
+            a.Show();
+            this.Close();
+        }
+        private void ListePersonnel(object sender, RoutedEventArgs e)
+        {
+            ListPersonnel a = new ListPersonnel();
+            a.Show();
+            this.Close();
         }
     }
 }

@@ -23,5 +23,18 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void AjoutCompet(object sender, RoutedEventArgs e)
+        {
+            AjoutCompet a = new AjoutCompet();
+            a.Show();
+            this.Close();
+        }
+        private void VoirCompet(object sender, RoutedEventArgs e)
+        {
+            VoirCompet a = new VoirCompet();
+            a.Show();
+            this.Close();
+        }
     }
 }

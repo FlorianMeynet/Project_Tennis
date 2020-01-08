@@ -13,10 +13,10 @@
                 <GradientStop Color="#FFF20303" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="Nombre de compétitions organisées" HorizontalAlignment="Left" Height="40" Margin="28,123,0,0" VerticalAlignment="Top" Width="287" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
-        <Label Content="Le nombre moyen de joueurs du club par compétition&#xD;&#xA;" HorizontalAlignment="Left" Height="37" Margin="28,55,0,0" VerticalAlignment="Top" Width="391" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
-        <Label Content="club par année le nombre de matches gagnés ou perdus" HorizontalAlignment="Left" Height="40" Margin="28,211,0,0" VerticalAlignment="Top" Width="459" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
-        <Label Content="résultats par catégorie" HorizontalAlignment="Left" Height="40" Margin="28,304,0,0" VerticalAlignment="Top" Width="176" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
+        <Label Content="Nombre de compétitions organisées : " HorizontalAlignment="Left" Height="40" Margin="28,123,0,0" VerticalAlignment="Top" Width="287" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
+        <Label Content="Le nombre moyen de joueurs du club par compétition : " HorizontalAlignment="Left" Height="37" Margin="28,55,0,0" VerticalAlignment="Top" Width="391" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
+        <Button Content="Résultats du club par année" HorizontalAlignment="Left" Margin="28,325,0,0" VerticalAlignment="Top" Width="275" Height="59" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="ResultatJoueur"/>
+        <Button Content="Résultats des joueurs" HorizontalAlignment="Left" Margin="28,223,0,0" VerticalAlignment="Top" Width="275" Height="59" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="ResultatClub"/>
 
     </Grid>
 </Window>

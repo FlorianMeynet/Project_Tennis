@@ -23,5 +23,18 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void Commentaire(object sender, RoutedEventArgs e)
+        {
+            Commentaire a = new Commentaire();
+            a.Show();
+            this.Close();
+        }
+        private void Trouver(object sender, RoutedEventArgs e)
+        {
+            TrouverPartenaire a = new TrouverPartenaire();
+            a.Show();
+            this.Close();
+        }
     }
 }

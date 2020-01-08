@@ -14,9 +14,11 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Grid HorizontalAlignment="Left" Height="287" Margin="66,99,0,0" VerticalAlignment="Top" Width="221">
-            <Button Content="Ajouter un compétition" HorizontalAlignment="Left" Margin="0,77,0,0" VerticalAlignment="Top" Width="221" Height="42"/>
-            <Button Content="Voir une compétition" HorizontalAlignment="Left" Margin="0,143,0,0" VerticalAlignment="Top" Width="221" Height="46"/>
+            <Button Content="Ajouter un compétition" HorizontalAlignment="Left" Height="123" Margin="-1,1,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black"  Click="AjoutCompet"/>
+            <Button Content="Voir une compétition" HorizontalAlignment="Right" Height="130" Margin="0,157,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="VoirCompet"/>
         </Grid>
+        <Label Content="Compétitions" HorizontalAlignment="Left" Height="84" Margin="34,10,0,0" VerticalAlignment="Top" Width="302" FontSize="48" Background="{x:Null}" Foreground="White" FontFamily="Roboto"/>
+        <Image HorizontalAlignment="Left" Height="297" Margin="415,89,0,0" VerticalAlignment="Top" Width="271" Source="72945.png"/>
 
     </Grid>
 </Window>

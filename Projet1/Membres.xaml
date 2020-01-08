@@ -13,14 +13,14 @@
                 <GradientStop Color="#FFF20303" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Grid  HorizontalAlignment="Left" Height="287" Margin="66,99,0,0" VerticalAlignment="Top" Width="221">
-            <Button Content="Ajouter un membre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221"  Height="35" Background="#FFFDFF00"/>
-            <Button Content="Supprimer un membre" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" Height="32"/>
-            <Button Content="Modifier un membre" HorizontalAlignment="Left" Margin="0,134,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" Height="57"/>
-            <Button Content="Liste Membres" HorizontalAlignment="Left" Margin="234,236,0,0" VerticalAlignment="Top" Width="75" Background="#FFFDFF00"/>
-            <Button Content="Liste Personnels" HorizontalAlignment="Left" Margin="0,236,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" Height="41"/>
+        <Grid  HorizontalAlignment="Left" Height="311" Margin="66,99,0,0" VerticalAlignment="Top" Width="221">
+            <Button Content="Ajouter un membre" HorizontalAlignment="Right" Height="47" Margin="0,0,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="AjoutMembre"/>
+            <Button Content="Supprimer un membre" HorizontalAlignment="Right" Height="47" Margin="0,65,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="SupprimerMembre"/>
+            <Button Content="Modifier un membre" HorizontalAlignment="Right" Height="47" Margin="0,130,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="ModifierMembre"/>
+            <Button Content="Liste Membres" HorizontalAlignment="Right" Height="47" Margin="0,195,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="ListeMembre"/>
+            <Button Content="Liste Personnels" HorizontalAlignment="Right" Margin="-1,260,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" Height="41" Click="ListePersonnel" FontWeight="Bold" FontFamily="Segoe UI Black"/>
         </Grid>
         <Image HorizontalAlignment="Left" Height="297" Margin="415,89,0,0" VerticalAlignment="Top" Width="271" Source="72945.png"/>
-        <Label Content="Membres " HorizontalAlignment="Left" Height="84" Margin="10,10,0,0" VerticalAlignment="Top" Width="337" FontSize="48" Background="{x:Null}" Foreground="White" FontFamily="Roboto"/>
+        <Label Content="Membres " HorizontalAlignment="Left" Height="84" Margin="34,10,0,0" VerticalAlignment="Top" Width="302" FontSize="48" Background="{x:Null}" Foreground="White" FontFamily="Roboto"/>
     </Grid>
 </Window>

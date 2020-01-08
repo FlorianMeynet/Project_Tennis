@@ -23,5 +23,17 @@ namespace Projet1
         {
             InitializeComponent();
         }
+        private void ResultatClub(object sender, RoutedEventArgs e)
+        {
+            ResultatClub a = new ResultatClub();
+            a.Show();
+            this.Close();
+        }
+        private void ResultatJoueur(object sender, RoutedEventArgs e)
+        {
+            Resultatjoueur a = new Resultatjoueur();
+            a.Show();
+            this.Close();
+        }
     }
 }
