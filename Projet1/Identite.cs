@@ -17,22 +17,27 @@ namespace Projet1
         public string Nom
         {
             get { return this.nom; }
+            set { this.nom = value; }
         }
         public string Prenom
         {
             get { return this.prenom; }
+            set { this.prenom = value; }
         }
         public DateTime Naissance
         {
             get { return this.naissance; }
+            set { this.naissance = value; }
         }
         public string Adresse
         {
             get { return this.adresse; }
+            set { this.adresse = value; }
         }
         public long Telephone
         {
             get { return this.telephone; }
+            set { this.telephone = value; }
         }
 
         public Identite()
@@ -59,6 +64,10 @@ namespace Projet1
             if (naissance > now.AddYears(-age))
                 age--;
             return age;
+        }
+        public override string ToString()
+        {
+            return ("Nom : " + this.nom + "\nPrénon : "+ this.prenom+"\n Date de Naissance : "+this.naissance+"\n Adresse : "+this.adresse+"\n Telephone : "+this.telephone);
         }
 
 

@@ -22,13 +22,14 @@ namespace Projet1
             this.resultat_match = null;
         }
 
-        public Competition_equipe(int ns,int nd, List<Match_simple> l_s,List<Match_double> l_d, List<char> r,string l, List<Joueur_competition[]> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m) : base(l, l_e, c, nb_j, n, niv, nb_j_m)
+        public Competition_equipe(int ns,int nd, List<Match_simple> l_s,List<Match_double> l_d, List<char> r,string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m) : base(l, l_e, c, nb_j, n, niv, nb_j_m)
         {
             this.nb_match_simple = ns;
             this.nb_match_double = nd;
             this.resultat_match = r;
             this.liste_match_simple = l_s;
             this.liste_match_double = l_d;
+            this.Nb_match_total += this.nb_match_double + this.Nb_match_simple;
         }
         public int Nb_match_simple
         {
@@ -79,6 +80,51 @@ namespace Projet1
             }
             return (true);
         }
+        public void Creation_List_Match(Equipe_competition equipe_b)
+        {
+            Random generateur = new Random();
+            if (Assez_de_joueur() == true)
+            {
+                for (int n = 0; n < nb_match_simple; n++)
+                {
+                    int nb = generateur.Next(1, equipe_b.List_joueur_equipe.Count());
+                    int na = generateur.Next(1, this.Liste_joueur_ok.Count());
+                    Match_simple ma_s = new Match_simple(equipe_b.Liste_joueur_ok[nb], this.Liste_joueur_ok[na]);
+                    Liste_match_simple.Add(ma_s);
+
+                    equipe_b.Liste_joueur_ok.Remove(equipe_b.Liste_joueur_ok[nb]);
+                    this.Liste_joueur_ok.Remove(this.Liste_joueur_ok[na]);
+                }
+                for (int a = 0; a < nb_match_double; a++)
+                {
+                    int nb1 = generateur.Next(1, equipe_b.List_joueur_equipe.Count());
+                    int na1 = generateur.Next(1, this.Liste_joueur_ok.Count());
+                    int nb2 = generateur.Next(1, equipe_b.List_joueur_equipe.Count());
+                    int na2 = generateur.Next(1, this.Liste_joueur_ok.Count());
+                    if((nb1!=nb2) && (nb1 != na2))
+                    {
+                        List<Joueur_competition> l_j1 = new List<Joueur_competition>();
+                        l_j1.Add(equipe_b.Liste_joueur_ok[nb1]);
+                        l_j1.Add(equipe_b.Liste_joueur_ok[nb2]);
+
+                        List<Joueur_competition> l_j2 = new List<Joueur_competition>();
+                        l_j2.Add(this.Liste_joueur_ok[na1]);
+                        l_j2.Add(this.Liste_joueur_ok[na2]);
+
+                        Equipe_competition eq1 = new Equipe_competition(l_j1);
+                        Equipe_competition eq2 = new Equipe_competition(l_j2);
+
+                        Match_double ma_d = new Match_double(eq1,eq2);
+                        equipe_b.Liste_joueur_ok.Remove(equipe_b.Liste_joueur_ok[nb1]);
+                        equipe_b.Liste_joueur_ok.Remove(equipe_b.Liste_joueur_ok[nb2]);
+                        this.Liste_joueur_ok.Remove(this.Liste_joueur_ok[na1]);
+                        this.Liste_joueur_ok.Remove(this.Liste_joueur_ok[na2]);
+                    }
+                    
+                }
+            }
+        }
+
 
 
     }

@@ -19,6 +19,12 @@ namespace Projet1
             this.date_compet=date;
 
         }
+        public Equipe_competition(List<Joueur_competition>l_j)
+        {
+            this.list_joueur_equipe = l_j;
+
+        }
+
         public List<Joueur_competition> List_joueur_equipe
         {
             get{return this.list_joueur_equipe;}
@@ -54,6 +60,12 @@ namespace Projet1
 
             
         }
+        public List<Joueur_competition> Liste_joueur_ok 
+        {
+            get { return this.list_joueur_equipe_ok; }
+            set { this.list_joueur_equipe_ok = value; }
+        }
+
 
         /*public void Ajout_deja_joueur(Joueur_competition b)
         {
