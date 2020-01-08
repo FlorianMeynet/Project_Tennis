@@ -7,7 +7,20 @@
         mc:Ignorable="d"
         Title="Membres" Height="450" Width="800">
     <Grid>
-        <Label Content="Membres" HorizontalAlignment="Left" Height="170" Margin="86,47,0,0" VerticalAlignment="Top" Width="411"/>
-
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FFF20303" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid  HorizontalAlignment="Left" Height="287" Margin="66,99,0,0" VerticalAlignment="Top" Width="221">
+            <Button Content="Ajouter un membre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221"  Height="35" Background="#FFFDFF00"/>
+            <Button Content="Supprimer un membre" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" Height="32"/>
+            <Button Content="Modifier un membre" HorizontalAlignment="Left" Margin="0,134,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" Height="57"/>
+            <Button Content="Liste Membres" HorizontalAlignment="Left" Margin="234,236,0,0" VerticalAlignment="Top" Width="75" Background="#FFFDFF00"/>
+            <Button Content="Liste Personnels" HorizontalAlignment="Left" Margin="0,236,0,0" VerticalAlignment="Top" Width="221" Background="#FFFDFF00" Height="41"/>
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="297" Margin="415,89,0,0" VerticalAlignment="Top" Width="271" Source="72945.png"/>
+        <Label Content="Membres " HorizontalAlignment="Left" Height="84" Margin="10,10,0,0" VerticalAlignment="Top" Width="337" FontSize="48" Background="{x:Null}" Foreground="White" FontFamily="Roboto"/>
     </Grid>
 </Window>

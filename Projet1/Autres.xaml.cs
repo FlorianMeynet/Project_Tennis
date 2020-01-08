@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace Projet1
 {
     /// <summary>
-    /// Logique d'interaction pour Membres.xaml
+    /// Logique d'interaction pour Autres.xaml
     /// </summary>
-    public partial class Membres : Window
+    public partial class Autres : Window
     {
-        public Membres()
+        public Autres()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

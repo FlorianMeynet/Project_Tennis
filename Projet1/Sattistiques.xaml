@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="Sattistiques" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FFF20303" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Nombre de compétitions organisées" HorizontalAlignment="Left" Height="40" Margin="28,123,0,0" VerticalAlignment="Top" Width="287" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
+        <Label Content="Le nombre moyen de joueurs du club par compétition&#xD;&#xA;" HorizontalAlignment="Left" Height="37" Margin="28,55,0,0" VerticalAlignment="Top" Width="391" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
+        <Label Content="club par année le nombre de matches gagnés ou perdus" HorizontalAlignment="Left" Height="40" Margin="28,211,0,0" VerticalAlignment="Top" Width="459" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
+        <Label Content="résultats par catégorie" HorizontalAlignment="Left" Height="40" Margin="28,304,0,0" VerticalAlignment="Top" Width="176" Background="{x:Null}" Foreground="White" FontFamily="Roboto" FontSize="16"/>
+
     </Grid>
 </Window>

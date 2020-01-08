@@ -10,10 +10,10 @@
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FFFF0303" Offset="1"/>
+                <GradientStop Color="#FFF20303" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Grid HorizontalAlignment="Left" Height="287" Margin="45,105,0,0" VerticalAlignment="Top" Width="221">
+        <Grid HorizontalAlignment="Left" Height="287" Margin="66,99,0,0" VerticalAlignment="Top" Width="221">
             <Button Content="Membres" HorizontalAlignment="Left" Height="47" Margin="-1,1,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Membres">
                 <Button.RenderTransform>
                     <TransformGroup>
@@ -24,9 +24,12 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            
+            <Button Content="Statistiques" Click="Statistiques" HorizontalAlignment="Right" Height="47" Margin="0,78,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black"/>
+            <Button Content="Compétitions" Click="Competitions" HorizontalAlignment="Right" Height="47" Margin="0,157,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black"/>
+            <Button Content="Autres" Click="Autres" HorizontalAlignment="Right" Height="47" Margin="0,235,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" FontWeight="Bold"/>
+
         </Grid>
-        <Image HorizontalAlignment="Left" Height="297" Margin="407,78,0,0" VerticalAlignment="Top" Width="271" Source="72945.png"/>
+        <Image HorizontalAlignment="Left" Height="297" Margin="415,89,0,0" VerticalAlignment="Top" Width="271" Source="72945.png"/>
         <Label Content="Club de Tennis " HorizontalAlignment="Left" Height="84" Margin="10,10,0,0" VerticalAlignment="Top" Width="337" FontSize="48" Background="{x:Null}" Foreground="White" FontFamily="Roboto"/>
     </Grid>
 </Window>

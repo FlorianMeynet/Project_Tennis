@@ -56,8 +56,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Administratif.cs" />
+    <Compile Include="Autres.xaml.cs">
+      <DependentUpon>Autres.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Capitaine.cs" />
     <Compile Include="Competition.cs" />
+    <Compile Include="Competitions.xaml.cs">
+      <DependentUpon>Competitions.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Competition_equipe.cs" />
     <Compile Include="Competition_simple.cs" />
     <Compile Include="Cours_Stage.cs" />
@@ -75,6 +81,14 @@
       <DependentUpon>Sattistiques.xaml</DependentUpon>
     </Compile>
     <Compile Include="Stage_Junior.cs" />
+    <Page Include="Autres.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Competitions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -31,9 +31,21 @@ namespace Projet1
             this.Close();
         }
 
-        private void Sattistiques(object sender, RoutedEventArgs e)
+        private void Statistiques(object sender, RoutedEventArgs e)
         {
             Sattistiques a = new Sattistiques();
+            a.Show();
+            this.Close();
+        }
+        private void Competitions(object sender,RoutedEventArgs e)
+        {
+            Competitions a = new Competitions();
+            a.Show();
+            this.Close();
+        }
+        private void Autres(object sender, RoutedEventArgs e)
+        {
+            Autres a = new Autres();
             a.Show();
             this.Close();
         }
