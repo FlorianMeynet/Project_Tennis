@@ -15,30 +15,17 @@ using System.Windows.Shapes;
 namespace Projet1
 {
     /// <summary>
-    /// Logique d'interaction pour Competitions.xaml
+    /// Logique d'interaction pour ListPersonnel.xaml
     /// </summary>
-    public partial class Competitions : Window
+    public partial class ListPersonnel : Window
     {
-        public Competitions()
+        public ListPersonnel()
         {
             InitializeComponent();
         }
-
-        private void AjoutCompet(object sender, RoutedEventArgs e)
-        {
-            AjoutCompet a = new AjoutCompet();
-            a.Show();
-            this.Close();
-        }
-        private void VoirCompet(object sender, RoutedEventArgs e)
-        {
-            VoirCompet a = new VoirCompet();
-            a.Show();
-            this.Close();
-        }
         private void Precedent(object sender, RoutedEventArgs e)
         {
-            MainWindow a = new MainWindow();
+            Membres a = new Membres();
             a.Show();
             this.Close();
         }

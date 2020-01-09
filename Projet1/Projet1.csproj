@@ -56,10 +56,19 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Administratif.cs" />
+    <Compile Include="AjoutCompet.xaml.cs">
+      <DependentUpon>AjoutCompet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutMembre.xaml.cs">
+      <DependentUpon>AjoutMembre.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Autres.xaml.cs">
       <DependentUpon>Autres.xaml</DependentUpon>
     </Compile>
     <Compile Include="Capitaine.cs" />
+    <Compile Include="Commentaire.xaml.cs">
+      <DependentUpon>Commentaire.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Competition.cs" />
     <Compile Include="Competitions.xaml.cs">
       <DependentUpon>Competitions.xaml</DependentUpon>
@@ -71,21 +80,65 @@
     <Compile Include="Equipe_entraineur.cs" />
     <Compile Include="Joueur_competition.cs" />
     <Compile Include="Joueur_loisir.cs" />
+    <Compile Include="ListMembre.xaml.cs">
+      <DependentUpon>ListMembre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListPersonnel.xaml.cs">
+      <DependentUpon>ListPersonnel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Match_double.cs" />
     <Compile Include="Match_simple.cs" />
     <Compile Include="Membres.xaml.cs">
       <DependentUpon>Membres.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Modifier Membre.xaml.cs">
+      <DependentUpon>Modifier Membre.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Personnel.cs" />
+    <Compile Include="ResultatClub.xaml.cs">
+      <DependentUpon>ResultatClub.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resultatjoueur.xaml.cs">
+      <DependentUpon>Resultatjoueur.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sattistiques.xaml.cs">
       <DependentUpon>Sattistiques.xaml</DependentUpon>
     </Compile>
     <Compile Include="Stage_Junior.cs" />
+    <Compile Include="SupprimerMembre.xaml.cs">
+      <DependentUpon>SupprimerMembre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrouverPartenaire.xaml.cs">
+      <DependentUpon>TrouverPartenaire.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VoirCompet.xaml.cs">
+      <DependentUpon>VoirCompet.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AjoutCompet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AjoutMembre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Autres.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Commentaire.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Competitions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListMembre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListPersonnel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,7 +163,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Modifier Membre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResultatClub.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resultatjoueur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sattistiques.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SupprimerMembre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrouverPartenaire.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VoirCompet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

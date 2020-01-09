@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Membre : Identite , IComparable
+    class Membre : Identite //, IComparable
     {
         private bool sexe; //renvoie true si c'est une femme
         private string ville;
@@ -86,7 +86,7 @@ namespace Projet1
             return rep;
         }
 
-        public int Compareto(Object val)
+       /** public int Compareto(Object val)
         {
             Membre valA = (Membre)val;
             return (this.Nom.CompareTo(valA.Nom));
@@ -112,6 +112,6 @@ namespace Projet1
         public static int ComparePA(Membre b, Membre c)
         {
             return (b.Paiement.CompareTo(c.Paiement));
-        }
+        }**/
     }
 }

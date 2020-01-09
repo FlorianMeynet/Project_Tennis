@@ -15,30 +15,18 @@ using System.Windows.Shapes;
 namespace Projet1
 {
     /// <summary>
-    /// Logique d'interaction pour Competitions.xaml
+    /// Logique d'interaction pour Resultatjoueur.xaml
     /// </summary>
-    public partial class Competitions : Window
+    public partial class Resultatjoueur : Window
     {
-        public Competitions()
+        public Resultatjoueur()
         {
             InitializeComponent();
         }
 
-        private void AjoutCompet(object sender, RoutedEventArgs e)
-        {
-            AjoutCompet a = new AjoutCompet();
-            a.Show();
-            this.Close();
-        }
-        private void VoirCompet(object sender, RoutedEventArgs e)
-        {
-            VoirCompet a = new VoirCompet();
-            a.Show();
-            this.Close();
-        }
         private void Precedent(object sender, RoutedEventArgs e)
         {
-            MainWindow a = new MainWindow();
+            Sattistiques a = new Sattistiques();
             a.Show();
             this.Close();
         }
