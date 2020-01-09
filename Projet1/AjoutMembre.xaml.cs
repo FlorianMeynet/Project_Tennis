@@ -53,23 +53,15 @@ namespace Projet1
             {
                 seexe = "M";
             }
-<<<<<<< HEAD
-            else { seexe = "F"; }
-            lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v+"\n");
-            lire.Close();
-            Console.WriteLine("Marche");
-=======
+
             if((bool)femme.IsChecked)
             {
                 seexe = "F"; 
             }
 
-
-            Ca_marche a = new Ca_marche();
-            a.Show();
-            this.Close();
-            if ((bool)compet.IsChecked) 
-            { 
+           
+            if ((bool)compet.IsChecked)
+            {
                 lire = new StreamWriter(fichierMembre_compet);
                 lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "," + c + "\n");
                 lire.Close();
@@ -78,11 +70,16 @@ namespace Projet1
             if ((bool)loisir.IsChecked)
             {
                 lire = new StreamWriter(fichierMembre_loisir);
-                lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v +"\n");
+                lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "\n");
                 lire.Close();
             }
-            
->>>>>>> e8b08d920c82f21023c55e3ace32bc8cec16f9fc
+
+            Ca_marche a = new Ca_marche();
+            a.Show();
+            this.Close();
+
+
+
         }
 
    
