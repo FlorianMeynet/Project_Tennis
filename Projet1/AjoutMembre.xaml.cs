@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Projet1
 {
@@ -34,7 +35,8 @@ namespace Projet1
         private void Inscription(object sender, RoutedEventArgs e)
         {
             string fichierMembre = "membres.txt";
-            StreamReader lire = new StreamReader(fichierMembre);
+            StreamWriter lire = null;
+            lire = new StreamWriter(fichierMembre);
 
             string p = prenom.Text;
             string n = nom.Text;
