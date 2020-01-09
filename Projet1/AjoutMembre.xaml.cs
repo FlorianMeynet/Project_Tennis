@@ -55,6 +55,7 @@ namespace Projet1
             else { seexe = "F"; }
             lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v+"\n");
             lire.Close();
+            Console.WriteLine("Marche");
         }
 
    
