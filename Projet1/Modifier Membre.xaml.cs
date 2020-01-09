@@ -29,5 +29,10 @@ namespace Projet1
             a.Show();
             this.Close();
         }
+
+        private void Modifier(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -58,7 +58,10 @@ namespace Projet1
             {
                 seexe = "F"; 
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d614193750fcea2b2691e35a8516263278122317
            
             if ((bool)compet.IsChecked)
             {

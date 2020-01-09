@@ -22,6 +22,7 @@ namespace Projet1
         public ListMembre()
         {
             InitializeComponent();
+            lise.Text="coucou\n\\ Heyyyyy";
         }
         private void Precedent(object sender, RoutedEventArgs e)
         {
