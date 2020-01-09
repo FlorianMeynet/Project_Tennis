@@ -23,5 +23,12 @@ namespace Projet1
         {
             InitializeComponent();
         }
+
+        private void acc(object sender, RoutedEventArgs e)
+        {
+            MainWindow a = new MainWindow();
+            a.Show();
+            this.Close();
+        }
     }
 }
