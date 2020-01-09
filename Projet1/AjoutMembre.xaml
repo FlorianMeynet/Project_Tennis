@@ -32,7 +32,7 @@
             <Label Content="Adresse Mail : " HorizontalAlignment="Left" Margin="-5,148,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
             <Label Content="Téléphone : " HorizontalAlignment="Left" Margin="-4,198,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
             <Label Content="Ville : " HorizontalAlignment="Left" Margin="-3,272,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
-            <Label Content="Jour" HorizontalAlignment="Left" Margin="0,123,0,0" VerticalAlignment="Top" Height="30" Width="40" Foreground="White"/>
+            <Label Content="Jour" HorizontalAlignment="Left" Margin="-6,123,0,0" VerticalAlignment="Top" Height="30" Width="40" Foreground="White"/>
             <Label Content="Mois" HorizontalAlignment="Left" Margin="91,124,0,0" VerticalAlignment="Top" Height="30" Width="40" Foreground="White"/>
             <Label Content="Année" HorizontalAlignment="Left" Margin="186,123,0,0" VerticalAlignment="Top" Height="30" Width="43" Foreground="White"/>
             <Label Content="Vous souhaitez jouer en  : " HorizontalAlignment="Left" Margin="335,44,-202,0" VerticalAlignment="Top" Height="30" Width="151" Foreground="White"/>

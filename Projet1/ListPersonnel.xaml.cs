@@ -22,12 +22,48 @@ namespace Projet1
         public ListPersonnel()
         {
             InitializeComponent();
+            lise.Text = "coucou\n\n\n Heyyyyy";
         }
         private void Precedent(object sender, RoutedEventArgs e)
         {
             Membres a = new Membres();
             a.Show();
             this.Close();
+        }
+
+        private void Nom(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Prenom(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Email(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Salaire(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void InfoBanque(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DatEntree(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tel(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -22,13 +22,63 @@ namespace Projet1
         public ListMembre()
         {
             InitializeComponent();
-            lise.Text="coucou\n\\ Heyyyyy";
+            lise.Text="coucou\n\n\n Heyyyyy";
         }
         private void Precedent(object sender, RoutedEventArgs e)
         {
             Membres a = new Membres();
             a.Show();
             this.Close();
+        }
+
+        private void Nom(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Prenom(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Email(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tel(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Salaire(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Sexe(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Type(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Naissance(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Competition(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Loisir(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

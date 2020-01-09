@@ -22,6 +22,8 @@ namespace Projet1
         public Sattistiques()
         {
             InitializeComponent();
+            joueurclub.Text = "A écrire";//Afficher le résultat de la méthode
+            clubcompet.Text = "A écrire";//Afficher le résultat de la méthode
         }
         private void ResultatClub(object sender, RoutedEventArgs e)
         {

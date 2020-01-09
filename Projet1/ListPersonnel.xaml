@@ -14,6 +14,14 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
+        <TextBlock x:Name="lise" HorizontalAlignment="Left" Margin="37,95,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="298" Width="724" Foreground="White"/>
+        <Button Content="Nom" HorizontalAlignment="Left" Margin="44,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Background="{x:Null}" Foreground="#FFF7F2F2" Click="Nom"/>
+        <Button Content="Prénom" HorizontalAlignment="Left" Margin="136,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Foreground="#FFF7F5F5" Background="{x:Null}" Click="Prenom"/>
+        <Button Content="Information Bancaire" HorizontalAlignment="Left" Margin="479,67,0,0" VerticalAlignment="Top" Width="125" Height="23" Foreground="White" Background="{x:Null}" Click="InfoBanque"/>
+        <Button Content="Salaire" HorizontalAlignment="Left" Margin="388,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Background="{x:Null}" Foreground="White" Click="Salaire"/>
+        <Button Content="Date d'entrée" HorizontalAlignment="Left" Margin="640,67,0,0" VerticalAlignment="Top" Width="88" Height="23" Background="{x:Null}" Foreground="White" Click="DatEntree"/>
+        <Button Content="Email" HorizontalAlignment="Left" Margin="225,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Background="{x:Null}" Foreground="White" Click="Email"/>
+        <Button Content="Téléphone" HorizontalAlignment="Left" Margin="307,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Foreground="White" Background="{x:Null}" Click="Tel"/>
 
     </Grid>
 </Window>
