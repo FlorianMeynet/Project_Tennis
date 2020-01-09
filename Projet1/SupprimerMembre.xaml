@@ -15,13 +15,13 @@
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
         <Label x:Name="nom" Content="Nom : " HorizontalAlignment="Left" Margin="48,120,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
-        <TextBox x:Name="supr_nom1" HorizontalAlignment="Left" Height="23" Margin="48,150,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" TextChanged="nom_TextChanged" />
+        <TextBox x:Name="supr_nom1" HorizontalAlignment="Left" Height="23" Margin="48,150,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" />
         <TextBox x:Name="supr_prenom1" HorizontalAlignment="Left" Height="23" Margin="48,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
         <Label x:Name="supr_prenom" Content="Prénom : " HorizontalAlignment="Left" Margin="48,173,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
         <Button Content="Supprimer" HorizontalAlignment="Left" Margin="48,284,0,0" VerticalAlignment="Top" Width="284" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="supprimer" Height="49"/>
         <Label Content="Vous souhaitez jouer en  : " HorizontalAlignment="Left" Margin="46,75,0,0" VerticalAlignment="Top" Height="30" Width="151" Foreground="White"/>
         <CheckBox x:Name="supr_loisir" Content="Loisir" HorizontalAlignment="Left" Margin="206,81,0,0" VerticalAlignment="Top" Width="69" Foreground="White"/>
-        <CheckBox x:Name="supr_compet" Content="Compétition" HorizontalAlignment="Left" Margin="275,81,0,0" VerticalAlignment="Top" Width="89" Foreground="White" Checked="compet_Checked"/>
+        <CheckBox x:Name="supr_compet" Content="Compétition" HorizontalAlignment="Left" Margin="275,81,0,0" VerticalAlignment="Top" Width="89" Foreground="White"/>
 
     </Grid>
 </Window>
