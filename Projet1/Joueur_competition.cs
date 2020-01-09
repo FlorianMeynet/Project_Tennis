@@ -17,7 +17,7 @@ namespace Projet1
         private List<DateTime> date_compet;
 
 
-        public Joueur_competition(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement) : base(nom, prenom, naissance, adresse, telephone, sexe, ville, paiement)
+        public Joueur_competition()
         {
             this.classement=0;
             this.age=0;
