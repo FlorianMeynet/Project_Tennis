@@ -28,8 +28,34 @@ namespace Projet1
             Membres a = new Membres();
             a.Show();
             this.Close();
+            
         }
 
+        private void Inscription(object sender, RoutedEventArgs e)
+        {
+            string fichierMembre = "membres.txt";
+            StreamReader lire = new StreamReader(fichierMembre);
+
+            string p = prenom.Text;
+            string n = nom.Text;
+            string d_j = jour.Text;
+            string d_m = mois.Text;
+            string d_a = annee.Text;
+            string t = tel.Text;
+            string em = email.Text;
+            string v = ville.Text;
+
+            string seexe = "";
+            if ((bool)male.IsChecked)
+            {
+                seexe = "M";
+            }
+            else { seexe = "F"; }
+            lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v+"\n");
+            lire.Close();
+        }
+
+   
     }
 }
 

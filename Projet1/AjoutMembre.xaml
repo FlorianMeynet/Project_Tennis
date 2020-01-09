@@ -14,37 +14,21 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
-        <Grid ShowGridLines="True" Margin="10,131,31.6,74">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="auto" MinHeight="59.2"></RowDefinition>
-                <RowDefinition Height="auto" MinHeight="46.4"></RowDefinition>
-                <RowDefinition Height="auto" MinHeight="57.6"></RowDefinition>
-                <RowDefinition Height="auto" MinHeight="57.6"></RowDefinition>
-                <RowDefinition/>
-                <RowDefinition Height="102.4"></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <Label Content="Nom" Grid.Column="0" Grid.Row="0" Margin="0,0,0,25.6" Grid.RowSpan="2"></Label>
-            <Label Content="Prenom" Grid.Column="0" Grid.Row="1" Margin="0,0.6,0,22" Grid.RowSpan="2"></Label>
-            <Label Content="Naissance" Grid.Column="0" Grid.Row="1" Margin="0,25.6,0,1" Grid.RowSpan="2"></Label>
-            <Label Content="Adresse Email" Grid.Column="0" Grid.Row="3" Margin="0,1,0,5.6"></Label>
-            <Label Content="Numéro de téléphone" Grid.Column="0" Grid.Row="3" Margin="0,47,0,33" Grid.RowSpan="3"></Label>
-            <Label Content="Kaki" Grid.Column="0" Grid.Row="5" Margin="0,10.4,0,11.6"/>
-
-            <TextBox Width="313" Grid.Column="1" Margin="3,3,0,2.4" HorizontalAlignment="Left"/>
-            <TextBox Width="313" Grid.Column="1" Grid.Row="1" Margin="3,2.4,0,2.6" 
-                 HorizontalAlignment="Left" ></TextBox>
-            <TextBox Width="313" Grid.Column="1" Grid.Row="2" Margin="3,2.4,0,2" 
-                 HorizontalAlignment="Left"></TextBox>
-            <TextBox Width="313" Grid.Column="1" Grid.Row="3" Margin="3,2.4,0,3.6" 
-                 HorizontalAlignment="Left"></TextBox>
-            <TextBox Width="313" Grid.Column="1" Grid.Row="4" Margin="3,2.4,0,63.6"
-                 HorizontalAlignment="Left"></TextBox>
+        <Grid HorizontalAlignment="Left" Height="301" Margin="59,88,0,0" VerticalAlignment="Top" Width="284">
+            <TextBox x:Name="nom" HorizontalAlignment="Left" Height="23" Margin="0,20,0,0" TextWrapping="Wrap" Text="Nom"  VerticalAlignment="Top" Width="284" TextChanged="prenom_TextChanged"/>
+            <TextBox x:Name="prenom" HorizontalAlignment="Left" Height="23" Margin="0,67,0,0" TextWrapping="Wrap" Text="Prénom" VerticalAlignment="Top" Width="284"/>
+            <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="0,160,0,0" TextWrapping="Wrap" Text="Adresse Email" VerticalAlignment="Top" Width="284" TextChanged="TextBox_TextChanged"/>
+            <TextBox x:Name="tel" HorizontalAlignment="Left" Height="23" Margin="0,201,0,0" TextWrapping="Wrap" Text="Téléphone" VerticalAlignment="Top" Width="284"/>
+            <TextBox x:Name="ville"  HorizontalAlignment="Left" Height="23" Margin="0,278,0,0" TextWrapping="Wrap" Text="Ville" VerticalAlignment="Top" Width="284"/>
+            <CheckBox x:Name="male" Content="M" HorizontalAlignment="Left" Margin="103,243,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="femme" Content="F" HorizontalAlignment="Left" Margin="181,243,0,0" VerticalAlignment="Top"/>
+            <Label Content="Sexe : " HorizontalAlignment="Left" Margin="-2,236,0,0" VerticalAlignment="Top" Height="30" Width="42"/>
+            <TextBox x:Name="jour" HorizontalAlignment="Left" Height="23" Margin="0,125,0,0" TextWrapping="Wrap" Text="Jour" VerticalAlignment="Top" Width="55"/>
+            <TextBox x:Name="mois" HorizontalAlignment="Left" Height="23" Margin="90,125,0,0" TextWrapping="Wrap" Text="Mois" VerticalAlignment="Top" Width="55"/>
+            <TextBox x:Name="annee" HorizontalAlignment="Left" Height="23" Margin="180,125,0,0" TextWrapping="Wrap" Text="Année" VerticalAlignment="Top" Width="55"/>
+            <Label Content="Date de naissance : " HorizontalAlignment="Left" Margin="-5,95,0,0" VerticalAlignment="Top" Height="30" Width="127"/>
         </Grid>
+        <Button Content="Je m'inscris" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Inscription" Height="67"/>
+
     </Grid>
 </Window>
