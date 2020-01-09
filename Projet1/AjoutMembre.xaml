@@ -14,14 +14,14 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
-        <Grid HorizontalAlignment="Left" Height="332" Margin="59,88,0,0" VerticalAlignment="Top" Width="284">
+        <Grid HorizontalAlignment="Left" Height="332" Margin="59,51,0,0" VerticalAlignment="Top" Width="284">
             <TextBox x:Name="nom" HorizontalAlignment="Left" Height="23" Margin="0,20,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" />
             <TextBox x:Name="prenom" HorizontalAlignment="Left" Height="23" Margin="0,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
             <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="0,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" />
             <TextBox x:Name="tel" HorizontalAlignment="Left" Height="23" Margin="0,225,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="284"/>
             <TextBox x:Name="ville"  HorizontalAlignment="Left" Height="23" Margin="0,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
-            <CheckBox x:Name="male" Content="M" HorizontalAlignment="Left" Margin="103,254,0,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="femme" Content="F" HorizontalAlignment="Left" Margin="181,254,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="male" Content="M" HorizontalAlignment="Left" Margin="103,254,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <CheckBox x:Name="femme" Content="F" HorizontalAlignment="Left" Margin="181,254,0,0" VerticalAlignment="Top" Foreground="White"/>
             <Label Content="Sexe : " HorizontalAlignment="Left" Margin="-2,248,0,0" VerticalAlignment="Top" Height="30" Width="42" Foreground="White"/>
             <TextBox x:Name="jour" HorizontalAlignment="Left" Height="23" Margin="35,126,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
             <TextBox x:Name="mois" HorizontalAlignment="Left" Height="23" Margin="130,126,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
@@ -35,6 +35,11 @@
             <Label Content="Jour" HorizontalAlignment="Left" Margin="0,123,0,0" VerticalAlignment="Top" Height="30" Width="40" Foreground="White"/>
             <Label Content="Mois" HorizontalAlignment="Left" Margin="91,124,0,0" VerticalAlignment="Top" Height="30" Width="40" Foreground="White"/>
             <Label Content="Année" HorizontalAlignment="Left" Margin="186,123,0,0" VerticalAlignment="Top" Height="30" Width="43" Foreground="White"/>
+            <Label Content="Vous souhaitez jouer en  : " HorizontalAlignment="Left" Margin="335,44,-202,0" VerticalAlignment="Top" Height="30" Width="151" Foreground="White"/>
+            <CheckBox x:Name="loisir" Content="Loisir" HorizontalAlignment="Left" Margin="495,50,-280,0" VerticalAlignment="Top" Width="69" Foreground="White"/>
+            <CheckBox x:Name="compet" Content="Compétition" HorizontalAlignment="Left" Margin="564,50,-369,0" VerticalAlignment="Top" Width="89" Foreground="White"/>
+            <Label Content="Si Compétition,quel est votre classement : " HorizontalAlignment="Left" Margin="335,79,-280,0" VerticalAlignment="Top" Height="30" Width="229" Foreground="White"/>
+            <TextBox x:Name="classement" HorizontalAlignment="Left" Height="23" Margin="583,81,-354,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
         </Grid>
         <Button Content="Je m'inscris" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Inscription" Height="67"/>
 

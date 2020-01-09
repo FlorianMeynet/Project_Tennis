@@ -34,9 +34,9 @@ namespace Projet1
 
         private void Inscription(object sender, RoutedEventArgs e)
         {
-            string fichierMembre = "membres.txt";
+            string fichierMembre_compet = "joueur_compet.txt";
+            string fichierMembre_loisir = "joueur_loisir.txt";
             StreamWriter lire = null;
-            lire = new StreamWriter(fichierMembre);
 
             string p = prenom.Text;
             string n = nom.Text;
@@ -46,15 +46,36 @@ namespace Projet1
             string t = tel.Text;
             string em = email.Text;
             string v = ville.Text;
-
+            string c = classement.Text;
             string seexe = "";
+
             if ((bool)male.IsChecked)
             {
                 seexe = "M";
             }
-            else { seexe = "F"; }
-            lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v+"\n");
-            lire.Close();
+            if((bool)femme.IsChecked)
+            {
+                seexe = "F"; 
+            }
+
+
+            Ca_marche a = new Ca_marche();
+            a.Show();
+            this.Close();
+            if ((bool)compet.IsChecked) 
+            { 
+                lire = new StreamWriter(fichierMembre_compet);
+                lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "," + c + "\n");
+                lire.Close();
+
+            }
+            if ((bool)loisir.IsChecked)
+            {
+                lire = new StreamWriter(fichierMembre_loisir);
+                lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v +"\n");
+                lire.Close();
+            }
+            
         }
 
    
