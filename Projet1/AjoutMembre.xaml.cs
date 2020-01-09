@@ -67,7 +67,7 @@ namespace Projet1
                 lire.Close();
 
             }
-            if ((bool)loisir.IsChecked)
+            else if ((bool)loisir.IsChecked)
             {
                 lire = new StreamWriter(fichierMembre_loisir);
                 lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "\n");
