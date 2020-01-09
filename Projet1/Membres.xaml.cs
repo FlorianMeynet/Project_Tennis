@@ -46,6 +46,8 @@ namespace Projet1
         private void ListeMembre(object sender, RoutedEventArgs e)
         {
             ListMembre a = new ListMembre();
+            a.lise.Text = "Coucou";
+            a.Width = 45;
             a.Show();
             this.Close();
         }
