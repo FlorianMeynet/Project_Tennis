@@ -58,7 +58,7 @@ namespace Projet1
             {
                 seexe = "F"; 
             }
-
+²
            
             if ((bool)compet.IsChecked)
             {

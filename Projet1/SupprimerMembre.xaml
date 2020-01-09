@@ -14,6 +14,11 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
+        <Label Content="Nom : " HorizontalAlignment="Left" Margin="48,161,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
+        <TextBox x:Name="nom" HorizontalAlignment="Left" Height="23" Margin="48,191,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" />
+        <TextBox x:Name="prenom" HorizontalAlignment="Left" Height="23" Margin="48,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
+        <Label Content="Prénom : " HorizontalAlignment="Left" Margin="48,214,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
+        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="48,325,0,0" VerticalAlignment="Top" Width="284" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="supprimer" Height="49"/>
 
     </Grid>
 </Window>
