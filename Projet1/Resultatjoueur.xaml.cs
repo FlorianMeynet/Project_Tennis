@@ -22,6 +22,7 @@ namespace Projet1
         public Resultatjoueur()
         {
             InitializeComponent();
+            lise.Text = "HeyHey";//Mettre le tostring des resultats ?
         }
 
         private void Precedent(object sender, RoutedEventArgs e)
@@ -29,6 +30,21 @@ namespace Projet1
             Sattistiques a = new Sattistiques();
             a.Show();
             this.Close();
+        }
+
+        private void Nom(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Email(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Prenom(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

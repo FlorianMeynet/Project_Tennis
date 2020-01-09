@@ -25,13 +25,13 @@ namespace Projet1
             joueurclub.Text = "A écrire";//Afficher le résultat de la méthode
             clubcompet.Text = "A écrire";//Afficher le résultat de la méthode
         }
-        private void ResultatClub(object sender, RoutedEventArgs e)
+        private void ResultatJoueur(object sender, RoutedEventArgs e)
         {
             ResultatClub a = new ResultatClub();
             a.Show();
             this.Close();
         }
-        private void ResultatJoueur(object sender, RoutedEventArgs e)
+        private void ResultatClub(object sender, RoutedEventArgs e)
         {
             Resultatjoueur a = new Resultatjoueur();
             a.Show();
