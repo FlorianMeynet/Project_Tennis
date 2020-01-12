@@ -19,5 +19,31 @@ namespace Projet1
             this.salaire = salaire;
             this.date_entree = date_entree;
         }
+        public Personnel()
+        {
+            this.info_bancaire = null;
+            this.salaire = 0;
+            this.date_entree = new DateTime();
+        }
+        public string Info_bancaire
+        {
+            get{ return this.info_bancaire; }
+            set { this.info_bancaire = value; }
+        }
+        public int Salaire
+        {
+            get { return this.salaire; }
+            set { this.salaire = value; }
+        }
+        public DateTime Date_entree
+        {
+            get { return this.date_entree; }
+            set { this.date_entree = value; }
+        }
+
+        public override string ToString()
+        {
+            return ("Nom : " + this.Nom + "Prenom : " + this.Prenom + "Date de naissance :" + this.Naissance + "Email : "+this.Adresse + "Telephone : " +this.Telephone+ "Info_bancaire :" +"Salaire :"+this.info_bancaire+"Date entrée :"+this.date_entree);
+        }
     }
 }

@@ -168,6 +168,8 @@ namespace Projet1
                 {
                     lise.Text = j_l.ToString() + "\n";
 
+                    //Ajouter pour trier par Nom/Prenom / date_naissance 
+
                 }
 
             }
