@@ -23,7 +23,7 @@ namespace Projet1
         public ListMembre()
         {
             InitializeComponent();
-            lise.Text="coucou\n\n\n Heyyyyy";
+            lise.Text= "Heyyyyy\n\n\n Choisis quel type de membre afficher !";
         }
         private void Precedent(object sender, RoutedEventArgs e)
         {

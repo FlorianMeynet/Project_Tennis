@@ -29,6 +29,7 @@ namespace Projet1
             StreamReader lire_r = null;
             lire_r = new StreamReader(fichierPersonnel);
             List<Personnel> liste_personnel = new List<Personnel>();
+            string affichage="";
             while (lire_r.Peek() > 0)    //Creation d'un Liste de tous les joueurs en competition
             {
                 ligne = lire_r.ReadLine();
@@ -50,14 +51,19 @@ namespace Projet1
                 int d_ej = int.Parse(date_e[0]);
                 int d_em = int.Parse(date_e[1]);
                 int d_ea = int.Parse(date_e[2]);
-                DateTime date_e = new DateTime(d_ea, d_em, d_ej);
-                perso.Date_entree = date_e;
+                DateTime date_entre = new DateTime(d_ea, d_em, d_ej);
+                perso.Date_entree = date_entre;
 
-                
-            foreach(Personnel pers in liste_personnel)
-            {
-                
+                liste_personnel.Add(perso);
+
+                foreach (Personnel pers in liste_personnel)
+                {
+                    affichage += pers.ToString()+"\n";
+
+                }
+                lise.Text=(affichage);
             }
+
         }
         private void Precedent(object sender, RoutedEventArgs e)
         {
