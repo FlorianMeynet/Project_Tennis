@@ -42,6 +42,18 @@ namespace Projet1
             set { this.liste_membre = value; }
         }
 
+        public int[] ResultatClub()
+        {
+            int nbre_match = 0;
+            int nbre_victoire = 0;
+            foreach(Membre m in this.liste_membre)
+            {
+
+            }
+            int[] tab = { nbre_match, nbre_victoire };
+            return (tab);
+        }
+
 
             
     }

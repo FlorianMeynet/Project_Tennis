@@ -22,7 +22,7 @@ namespace Projet1
         public Sattistiques()
         {
             InitializeComponent();
-            joueurclub.Text = "A écrire";//Afficher le résultat de la méthode
+            joueurclub.Text = "A ecrire";//Afficher le résultat de la méthode
             clubcompet.Text = "A écrire";//Afficher le résultat de la méthode
         }
         private void ResultatJoueur(object sender, RoutedEventArgs e)
@@ -42,6 +42,30 @@ namespace Projet1
             MainWindow a = new MainWindow();
             a.Show();
             this.Close();
+        }
+
+        private int NbreMoyenJoueur(List<Competition_simple> list)
+        {
+            int compteur_compet = 0;
+            int compteur_joueur = 0;
+            foreach(Competition_simple elt in list)
+            {
+                foreach(Joueur_competition  a in elt.Liste_equipe)
+                {
+                    compteur_joueur++;
+                }
+                compteur_compet++;
+            }
+            return (compteur_joueur / compteur_compet);
+        }
+        private int NbreMoyenJoueur(List<Competition> list)
+        {
+            int compteur_compet = 0;
+            foreach (Competition elt in list)
+            {
+                compteur_compet++;
+            }
+            return compteur_compet;
         }
     }
 }

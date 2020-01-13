@@ -14,12 +14,14 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
-        <Grid HorizontalAlignment="Left" Height="332" Margin="59,51,0,0" VerticalAlignment="Top" Width="284">
+        <Button Content="Création de la compétition" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Height="67" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="143" Margin="519,191,0,0" VerticalAlignment="Top" Width="153" Source="729453.png"/>
+        <Grid HorizontalAlignment="Left" Height="359" Margin="59,51,0,0" VerticalAlignment="Top" Width="284">
             <TextBox x:Name="lieu" HorizontalAlignment="Left" Height="23" Margin="0,20,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" />
             <TextBox x:Name="nom_compet" HorizontalAlignment="Left" Height="23" Margin="0,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
             <TextBox x:Name="classement_max" HorizontalAlignment="Left" Height="23" Margin="0,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" />
             <TextBox x:Name="liste_participant" HorizontalAlignment="Left" Height="23" Margin="0,225,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="284"/>
-            <TextBox x:Name="nbre_jour"  HorizontalAlignment="Left" Height="23" Margin="0,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
+            <TextBox x:Name="nbre_jour"  HorizontalAlignment="Left" Height="23" Margin="0,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
             <Label Content="Catégorie : " HorizontalAlignment="Left" Margin="-2,248,0,0" VerticalAlignment="Top" Height="30" Width="72" Foreground="White"/>
             <TextBox x:Name="nbre_min_joueur" HorizontalAlignment="Left" Height="23" Margin="0,126,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="284"/>
             <Label Content="Nombre minimun de joueur : " HorizontalAlignment="Left" Margin="-5,95,0,0" VerticalAlignment="Top" Height="30" Width="173" Foreground="White"/>
@@ -27,17 +29,16 @@
             <Label Content="Lieu : " HorizontalAlignment="Left" Margin="-5,-3,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
             <Label Content="Classement maximum : " HorizontalAlignment="Left" Margin="-5,148,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
             <Label Content="Liste des participants : " HorizontalAlignment="Left" Margin="-4,198,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
-            <Label Content="Nombre de jours : " HorizontalAlignment="Left" Margin="-3,272,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
-            <TextBox x:Name="liste_participant_Copy" HorizontalAlignment="Left" Height="23" Margin="76,255,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="70"/>
-            <TextBox x:Name="liste_participant_Copy1" HorizontalAlignment="Left" Height="23" Margin="172,255,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="70"/>
-            <Label Content="Nombre de match simple : " HorizontalAlignment="Left" Margin="368,56,-252,0" VerticalAlignment="Top" Height="30" Width="168" Foreground="White"/>
-            <Label Content="Nombre de match double : " HorizontalAlignment="Left" Margin="370,94,-254,0" VerticalAlignment="Top" Height="30" Width="168" Foreground="White"/>
-            <TextBox x:Name="lieu_Copy" HorizontalAlignment="Left" Height="23" Margin="545,57,-322,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61" />
-            <TextBox x:Name="lieu_Copy1" HorizontalAlignment="Left" Height="23" Margin="0,20,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" />
-            <TextBox x:Name="lieu_Copy2" HorizontalAlignment="Left" Height="23" Margin="545,101,-322,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61" />
+            <Label Content="Nombre de jours : " HorizontalAlignment="Left" Margin="-3,299,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
+            <TextBox x:Name="annee_min" HorizontalAlignment="Left" Height="23" Margin="87,275,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="51"/>
+            <TextBox x:Name="annee_max" HorizontalAlignment="Left" Height="23" Margin="227,274,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="51"/>
+            <Label Content="Année Min " HorizontalAlignment="Left" Margin="12,273,0,0" VerticalAlignment="Top" Height="30" Width="72" Foreground="White"/>
+            <Label Content="Année Max " HorizontalAlignment="Left" Margin="148,273,0,0" VerticalAlignment="Top" Height="30" Width="74" Foreground="White"/>
+            <Label Content="Nombre de match simple : " HorizontalAlignment="Left" Margin="401,97,-272,0" VerticalAlignment="Top" Height="30" Width="155" Foreground="White"/>
+            <TextBox x:Name="nbre_match_simple" HorizontalAlignment="Left" Height="23" Margin="583,98,-360,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61"  />
+            <Label Content="Nombre de match double : " HorizontalAlignment="Left" Margin="401,57,-272,0" VerticalAlignment="Top" Height="30" Width="155" Foreground="White"/>
+            <TextBox x:Name="nbre_match_double" HorizontalAlignment="Left" Height="23" Margin="583,58,-360,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61"  />
         </Grid>
-        <Button Content="Création de la compétition" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Height="67"/>
-        <Image HorizontalAlignment="Left" Height="143" Margin="519,191,0,0" VerticalAlignment="Top" Width="153" Source="729453.png"/>
 
     </Grid>
 </Window>

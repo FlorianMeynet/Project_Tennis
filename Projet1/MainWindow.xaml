@@ -30,7 +30,7 @@
 
         </Grid>
         <Label Content="Club de Tennis " HorizontalAlignment="Left" Height="84" Margin="10,10,0,0" VerticalAlignment="Top" Width="337" FontSize="48" Background="{x:Null}" Foreground="White" FontFamily="Roboto"/>
-        <Image HorizontalAlignment="Left" Height="324" Margin="440,76,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
+        <Image HorizontalAlignment="Left" Height="324" Margin="440,72,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
     </Grid>
 </Window>
 
