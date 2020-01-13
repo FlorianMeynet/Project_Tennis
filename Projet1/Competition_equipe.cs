@@ -22,7 +22,7 @@ namespace Projet1
             this.resultat_match = null;
         }
 
-        public Competition_equipe(int ns,int nd, List<Match_simple> l_s,List<Match_double> l_d, List<char> r,string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m) : base(l, l_e, c, nb_j, n, niv, nb_j_m)
+        public Competition_equipe(int ns,int nd, List<Match_simple> l_s,List<Match_double> l_d, List<char> r,string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m,int annee_min, int annee_max) : base(l, l_e, c, nb_j, n, niv, nb_j_m, annee_min, annee_max)
         {
             this.nb_match_simple = ns;
             this.nb_match_double = nd;

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Media;
 
 namespace Projet1
 {
@@ -20,10 +21,15 @@ namespace Projet1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private SoundPlayer music;
         public MainWindow()
         {
             InitializeComponent();
+            music = new SoundPlayer("music.wav");
+            music.Play();
         }
+
+
         private void Membres(object sender,RoutedEventArgs e)
         {
             Membres a = new Membres();

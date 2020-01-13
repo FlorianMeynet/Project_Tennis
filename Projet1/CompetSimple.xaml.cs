@@ -44,20 +44,11 @@ namespace Projet1
             string participant = liste_participant.Text;
             string jour = nbre_jour.Text;
             string match = nbre_match.Text;
-            string categorie = "";
-
-            if ((bool)male.IsChecked)
-            {
-                categorie = "M";
-            }
-
-            if ((bool)femme.IsChecked)
-            {
-                categorie = "F";
-            }
+            string anne_min = annee_min.Text;
+            string anne_max = annee_max.Text;
             lire = new StreamWriter(fichier_compet_simple, true);
 
-            lire.WriteLine(n + "," + l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," + match + "," + categorie );
+            lire.WriteLine(l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," + match + "," + annee_min+"/"+annee_max );
             lire.Close();
             Ca_marche a = new Ca_marche();
             a.Show();

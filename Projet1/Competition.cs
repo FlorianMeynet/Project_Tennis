@@ -17,6 +17,9 @@ namespace Projet1
         private double classement_max;
         private int nb_j_min;
         int nb_match_total=0;
+        int annee_min;
+        int annee_max;
+
 
         public Competition()
         {
@@ -27,10 +30,12 @@ namespace Projet1
             this.nom = "";
             this.classement_max = 0;
             this.nb_j_min = 0;
+            this.annee_min = 0;
+            this.annee_max = 0;
 
 
         }
-        public Competition(string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m)
+        public Competition(string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m,int annee_min,int annee_max)
         {
             this.lieu = l;
             this.liste_equipe = l_e;
@@ -39,7 +44,19 @@ namespace Projet1
             this.nom = n;
             this.classement_max = niv;
             this.nb_j_min = nb_j_m;
+            this.annee_max = annee_max;
+            this.annee_min = annee_min;
 
+        }
+        public int Annee_min
+        {
+            get { return this.annee_min; }
+            set { this.annee_min = value; }
+        }
+        public int Annee_max
+        {
+            get { return this.annee_max; }
+            set { this.annee_max = value; }
         }
         public int Nb_match_total
         {
