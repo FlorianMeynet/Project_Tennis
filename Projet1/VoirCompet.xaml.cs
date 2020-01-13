@@ -52,12 +52,10 @@ namespace Projet1
                 compet_indiv.Nb_match = int.Parse(mots[6]);
                 String cat = mots[7];
                 String[] cat_l = cat.Split('/');
-                compet_indiv.Annee_min = cat_l[0];
-                compet_indiv.Annee_max = cat_l[1];
+                compet_indiv.Annee_min = int.Parse(cat_l[0]);
+                compet_indiv.Annee_max = int.Parse(cat_l[1]);
 
-
-                //compet_indiv.Cat_age = mots[7];
-
+                liste_c_i.Add(compet_indiv);
             }
 
             string affichage = "";

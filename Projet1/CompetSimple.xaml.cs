@@ -46,9 +46,10 @@ namespace Projet1
             string match = nbre_match.Text;
             string anne_min = annee_min.Text;
             string anne_max = annee_max.Text;
+
             lire = new StreamWriter(fichier_compet_simple, true);
 
-            lire.WriteLine(l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," + match + "," + annee_min+"/"+annee_max );
+            lire.WriteLine(l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," + match + "," + anne_min+"/"+anne_max );
             lire.Close();
             Ca_marche a = new Ca_marche();
             a.Show();
