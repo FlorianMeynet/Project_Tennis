@@ -34,7 +34,7 @@ namespace Projet1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string fichier_compet_simple = "joueur_compet.txt";
+            string fichier_compet_simple = "compet_individuel.txt";
             StreamWriter lire = null;
 
             string l = lieu.Text;

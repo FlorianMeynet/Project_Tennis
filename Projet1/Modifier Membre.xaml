@@ -44,6 +44,7 @@
         </Grid>
         <Button Content="Modifier" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Modifier" Height="67"/>
         <Label Content="Remplir uniquement les cases de ceux que vous souhaitez modifier :" HorizontalAlignment="Left" Height="41" Margin="59,16,0,0" VerticalAlignment="Top" Width="463" Foreground="White" FontSize="14"/>
+        <Image HorizontalAlignment="Left" Height="174" Margin="518,169,0,0" VerticalAlignment="Top" Width="162" Source="729453.png"/>
 
     </Grid>
 </Window>

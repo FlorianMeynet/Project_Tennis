@@ -17,6 +17,7 @@
         <Label Content="Match gagnés" HorizontalAlignment="Left" Margin="137,84,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Label Content="Année" HorizontalAlignment="Left" Margin="38,84,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Label Content="Match perdus" HorizontalAlignment="Left" Margin="272,82,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="324" Margin="440,76,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
 
     </Grid>
 </Window>

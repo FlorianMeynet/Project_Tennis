@@ -22,6 +22,7 @@
         <Label Content="Vous souhaitez jouer en  : " HorizontalAlignment="Left" Margin="46,75,0,0" VerticalAlignment="Top" Height="30" Width="151" Foreground="White"/>
         <CheckBox x:Name="supr_loisir" Content="Loisir" HorizontalAlignment="Left" Margin="206,81,0,0" VerticalAlignment="Top" Width="69" Foreground="White"/>
         <CheckBox x:Name="supr_compet" Content="Compétition" HorizontalAlignment="Left" Margin="275,81,0,0" VerticalAlignment="Top" Width="89" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="324" Margin="440,76,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
 
     </Grid>
 </Window>

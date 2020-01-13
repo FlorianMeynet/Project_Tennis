@@ -37,6 +37,7 @@
             <TextBox x:Name="lieu_Copy2" HorizontalAlignment="Left" Height="23" Margin="545,101,-322,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61" />
         </Grid>
         <Button Content="Création de la compétition" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Height="67"/>
+        <Image HorizontalAlignment="Left" Height="143" Margin="519,191,0,0" VerticalAlignment="Top" Width="153" Source="729453.png"/>
 
     </Grid>
 </Window>
