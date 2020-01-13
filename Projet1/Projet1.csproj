@@ -72,12 +72,18 @@
     <Compile Include="Commentaire.xaml.cs">
       <DependentUpon>Commentaire.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CompetEquipe.xaml.cs">
+      <DependentUpon>CompetEquipe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Competition.cs" />
     <Compile Include="Competitions.xaml.cs">
       <DependentUpon>Competitions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Competition_equipe.cs" />
     <Compile Include="Competition_simple.cs" />
+    <Compile Include="CompetSimple.xaml.cs">
+      <DependentUpon>CompetSimple.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Cours_Stage.cs" />
     <Compile Include="Equipe_competition.cs" />
     <Compile Include="Equipe_entraineur.cs" />
@@ -137,7 +143,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CompetEquipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Competitions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CompetSimple.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

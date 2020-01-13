@@ -15,31 +15,18 @@ using System.Windows.Shapes;
 namespace Projet1
 {
     /// <summary>
-    /// Logique d'interaction pour AjoutCompet.xaml
+    /// Logique d'interaction pour CompetSimple.xaml
     /// </summary>
-    public partial class AjoutCompet : Window
+    public partial class CompetSimple : Window
     {
-        public AjoutCompet()
+        public CompetSimple()
         {
             InitializeComponent();
         }
 
         private void Precedent(object sender, RoutedEventArgs e)
         {
-            Competitions a = new Competitions();
-            a.Show();
-            this.Close();
-        }
-
-        private void Equipe(object sender, RoutedEventArgs e)
-        {
-            CompetEquipe a= new CompetEquipe();
-            a.Show();
-            this.Close();
-        }
-        private void Individuel(object sender, RoutedEventArgs e)
-        {
-            CompetSimple a = new CompetSimple();
+            AjoutCompet a = new AjoutCompet();
             a.Show();
             this.Close();
         }
