@@ -31,9 +31,9 @@
             <Label Content="Liste des participants : " HorizontalAlignment="Left" Margin="-4,198,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
             <Label Content="Nombre de jours : " HorizontalAlignment="Left" Margin="-3,272,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
         </Grid>
-        <Button Content="Création de la compétition" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Height="67"/>
+        <Button Content="Création de la compétition" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Height="67" Click="Button_Click"/>
         <Label Content="Nombre de match : " HorizontalAlignment="Left" Margin="428,111,0,0" VerticalAlignment="Top" Height="30" Width="120" Foreground="White"/>
-        <TextBox x:Name="lieu_Copy" HorizontalAlignment="Left" Height="23" Margin="583,112,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61" />
+        <TextBox x:Name="nbre_match" HorizontalAlignment="Left" Height="23" Margin="583,112,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61"  />
 
     </Grid>
 </Window>

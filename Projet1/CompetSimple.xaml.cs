@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Projet1
 {
@@ -27,6 +28,38 @@ namespace Projet1
         private void Precedent(object sender, RoutedEventArgs e)
         {
             AjoutCompet a = new AjoutCompet();
+            a.Show();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string fichier_compet_simple = "joueur_compet.txt";
+            StreamWriter lire = null;
+
+            string l = lieu.Text;
+            string n = nom_compet.Text;
+            string min = nbre_min_joueur.Text;
+            string max = classement_max.Text;
+            string participant = liste_participant.Text;
+            string jour = nbre_jour.Text;
+            string match = nbre_match.Text;
+            string categorie = "";
+
+            if ((bool)male.IsChecked)
+            {
+                categorie = "M";
+            }
+
+            if ((bool)femme.IsChecked)
+            {
+                categorie = "F";
+            }
+            lire = new StreamWriter(fichier_compet_simple, true);
+
+            lire.WriteLine(n + "," + l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," + match + "," + categorie );
+            lire.Close();
+            Ca_marche a = new Ca_marche();
             a.Show();
             this.Close();
         }
