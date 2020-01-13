@@ -53,7 +53,7 @@ namespace Projet1
                 String cat = mots[7];
                 String[] cat_l = cat.Split('/');
                 compet_indiv.Annee_min = cat_l[0];
-                compet_indiv.Annee_max=cat_l[1]
+                compet_indiv.Annee_max = cat_l[1];
 
 
                 //compet_indiv.Cat_age = mots[7];
