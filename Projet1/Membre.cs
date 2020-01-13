@@ -39,6 +39,11 @@ namespace Projet1
             get { return this.sexe; }
             set { this.sexe = value; }
         }
+        public string Sexe_vrai()
+        {
+            if (this.Sexe == true) { return ("Femme"); }
+            else { return ("Homme"); }
+        }
         public string Ville
         {
             get { return this.ville; }
@@ -52,7 +57,7 @@ namespace Projet1
 
         public override string ToString()
         {
-            return (base.ToString() + " " + this.sexe + "  " + this.ville + "  " + this.paiement);
+            return (base.ToString() + " " + this.Sexe_vrai() + "  " + this.ville + "  " + this.paiement);
         }
         public int prix(string villeclub, bool competition)
         {

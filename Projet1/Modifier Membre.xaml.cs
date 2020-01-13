@@ -35,15 +35,10 @@ namespace Projet1
         {
             if ((bool)compet.IsChecked)
             {
-                string ligne = "";
                 String[] mots;
                 string fichierMembre_compet = "joueur_compet.txt";
-                StreamReader lire_r = null;
                 StreamWriter lire_w = null;
-                lire_r = new StreamReader(fichierMembre_compet);
                 List<Joueur_competition> liste_j_c = new List<Joueur_competition>();
-
-               
 
                 string[] lignes = File.ReadAllLines(fichierMembre_compet);
                 for (int i = 0; i< lignes.Length-1; i++)
@@ -76,10 +71,7 @@ namespace Projet1
 
                     liste_j_c.Add(j_compet);
                 }
-                    
 
-            
-                lire_r.Close();
                 lire_w = new StreamWriter(fichierMembre_compet);  //On a bien la liste des joueurs compet
 
                 foreach (Joueur_competition j_c in liste_j_c)

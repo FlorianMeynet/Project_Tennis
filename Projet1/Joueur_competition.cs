@@ -25,6 +25,14 @@ namespace Projet1
             this.nb__match_gagner=0;
             this.nb__match_jouer=0;
         }
+        public Joueur_competition(string nom)
+        {
+            this.classement = 0;
+            this.age = 0;
+            this.point_joueur = 0;
+            this.nb__match_gagner = 0;
+            this.nb__match_jouer = 0;
+        }
 
         public Joueur_competition(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement, int c, int a, int p, int nb_j, int nb_g) : base(nom, prenom, naissance, adresse, telephone, sexe, ville, paiement)
         {

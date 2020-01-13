@@ -123,8 +123,6 @@ namespace Projet1
             
             String[] mots;
             string fichierMembre_loisir = "joueur_loisir.txt";
-            StreamReader lire_r = null;
-            lire_r = new StreamReader(fichierMembre_loisir);
             List<Joueur_loisir> liste_j_l = new List<Joueur_loisir>();
 
             string[] lignes = File.ReadAllLines(fichierMembre_loisir);
@@ -155,17 +153,16 @@ namespace Projet1
 
                 j_loisir.Ville = mots[6];
                 liste_j_l.Add(j_loisir);
-
             }
 
-            lire_r.Close();
-            foreach (Joueur_loisir j_l in liste_j_l)
+            
+            string affichage = "";
+            foreach (Joueur_loisir j_c in liste_j_l)
             {
-                lise.Text = j_l.ToString() + "\n";
-
-                //Ajouter pour trier par Nom/Prenom / date_naissance 
-
+                affichage += j_c.ToString() + "\n";
             }
+            lise.Text = affichage;
+
         }
     }
 }
