@@ -43,12 +43,18 @@ namespace Projet1
                 lire_r = new StreamReader(fichierMembre_compet);
                 List<Joueur_competition> liste_j_c = new List<Joueur_competition>();
 
-                while (lire_r.Peek() > 0)    //Creation d'un Liste de tous les joueurs en compètes
+                /***while (lire_r.Peek() > 0)    //Creation d'un Liste de tous les joueurs en compètes
                 {
                     ligne = lire_r.ReadLine();
-                    mots = ligne.Split(',');
+                    mots = ligne.Split(',');**/
+
+                string[] lignes = File.ReadAllLines(fichierMembre_compet);
+                for (int i = 0; i< lignes.Length; i++)
+                {
+                    string ligne_num = lignes[i];
+                    mots=ligne_num.Split(',');
                     Joueur_competition j_compet = new Joueur_competition();
-                    j_compet.Nom = mots[0];
+                    j_compet.Nom =mots[0] ;
                     j_compet.Prenom = mots[1];
                     String[] date = mots[3].Split('/');
                     int d_j = int.Parse(date[0]);
@@ -73,11 +79,11 @@ namespace Projet1
 
                     liste_j_c.Add(j_compet);
                 }
+                    
 
-
+            
                 lire_r.Close();
-
-                lire_w = new StreamWriter(fichierMembre_compet);
+                lire_w = new StreamWriter(fichierMembre_compet);  //On a bien la liste des joueurs compet
 
                 foreach (Joueur_competition j_c in liste_j_c)
                 {

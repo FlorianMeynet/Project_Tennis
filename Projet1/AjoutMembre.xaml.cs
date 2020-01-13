@@ -62,15 +62,17 @@ namespace Projet1
            
             if ((bool)compet.IsChecked)
             {
-                lire = new StreamWriter(fichierMembre_compet);
-                lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "," + c + "\n");
+                lire = new StreamWriter(fichierMembre_compet,true);
+
+                lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "," + c);
                 lire.Close();
 
             }
             else if ((bool)loisir.IsChecked)
             {
-                lire = new StreamWriter(fichierMembre_loisir);
-                lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "\n");
+                lire = new StreamWriter(fichierMembre_loisir,true);
+                
+                lire.WriteLine(n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v);
                 lire.Close();
             }
 
