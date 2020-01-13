@@ -43,29 +43,26 @@ namespace Projet1
                 lire_r = new StreamReader(fichierMembre_compet);
                 List<Joueur_competition> liste_j_c = new List<Joueur_competition>();
 
-                /***while (lire_r.Peek() > 0)    //Creation d'un Liste de tous les joueurs en compètes
-                {
-                    ligne = lire_r.ReadLine();
-                    mots = ligne.Split(',');**/
+               
 
                 string[] lignes = File.ReadAllLines(fichierMembre_compet);
-                for (int i = 0; i< lignes.Length; i++)
+                for (int i = 0; i< lignes.Length-1; i++)
                 {
                     string ligne_num = lignes[i];
                     mots=ligne_num.Split(',');
                     Joueur_competition j_compet = new Joueur_competition();
                     j_compet.Nom =mots[0] ;
                     j_compet.Prenom = mots[1];
-                    String[] date = mots[3].Split('/');
+                    String[] date = mots[2].Split('/');
                     int d_j = int.Parse(date[0]);
                     int d_m = int.Parse(date[1]);
                     int d_a = int.Parse(date[2]);
 
                     DateTime date_n = new DateTime(d_a, d_m, d_j);
                     j_compet.Naissance = (date_n);
-                    j_compet.Adresse = mots[4];
-                    j_compet.Telephone = long.Parse(mots[5]);
-                    if (mots[6] == "F")
+                    j_compet.Adresse = mots[3];
+                    j_compet.Telephone = long.Parse(mots[4]);
+                    if (mots[5] == "F")
                     {
                         j_compet.Sexe = true;
                     }
@@ -74,8 +71,8 @@ namespace Projet1
                         j_compet.Sexe = false;
                     }
 
-                    j_compet.Ville = mots[7];
-                    j_compet.Classement = double.Parse(mots[8]);
+                    j_compet.Ville = mots[6];
+                    j_compet.Classement = double.Parse(mots[7]);
 
                     liste_j_c.Add(j_compet);
                 }
@@ -128,7 +125,7 @@ namespace Projet1
 
             else if ((bool)loisir.IsChecked)
             {
-                string ligne = "";
+                
                 String[] mots;
                 string fichierMembre_loisir = "joueur_loisir.txt";
                 StreamReader lire_r = null;
@@ -136,25 +133,24 @@ namespace Projet1
                 lire_r = new StreamReader(fichierMembre_loisir);
                 List<Joueur_loisir> liste_j_l = new List<Joueur_loisir>();
 
-                while (lire_r.Peek() > 0)    //Creation d'un Liste de tous les joueurs en compètes
+                string[] lignes = File.ReadAllLines(fichierMembre_loisir);
+                for (int i = 0; i < lignes.Length-1; i++)
                 {
-
-                    ligne = lire_r.ReadLine();
-                    mots = ligne.Split(',');
-
+                    string ligne_num = lignes[i];
+                    mots = ligne_num.Split(',');
                     Joueur_loisir j_loisir = new Joueur_loisir();
                     j_loisir.Nom = mots[0];
                     j_loisir.Prenom = mots[1];
-                    String[] date = mots[3].Split('/');
+                    String[] date = mots[2].Split('/');
                     int d_j = int.Parse(date[0]);
                     int d_m = int.Parse(date[1]);
                     int d_a = int.Parse(date[2]);
 
                     DateTime date_n = new DateTime(d_a, d_m, d_j);
                     j_loisir.Naissance = (date_n);
-                    j_loisir.Adresse = mots[4];
-                    j_loisir.Telephone = long.Parse(mots[5]);
-                    if (mots[6] == "F")
+                    j_loisir.Adresse = mots[3];
+                    j_loisir.Telephone = long.Parse(mots[4]);
+                    if (mots[5] == "F")
                     {
                         j_loisir.Sexe = true;
                     }
@@ -163,7 +159,7 @@ namespace Projet1
                         j_loisir.Sexe = false;
                     }
 
-                    j_loisir.Ville = mots[7];
+                    j_loisir.Ville = mots[6];
 
 
                     liste_j_l.Add(j_loisir);

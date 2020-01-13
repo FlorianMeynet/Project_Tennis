@@ -52,7 +52,7 @@ namespace Projet1
 
         public override string ToString()
         {
-            return (base.ToString() + "\n Sexe : " + this.sexe + "\n Ville : " + this.ville + "\n Paiement : " + this.paiement);
+            return (base.ToString() + " " + this.sexe + "  " + this.ville + "  " + this.paiement);
         }
         public int prix(string villeclub, bool competition)
         {

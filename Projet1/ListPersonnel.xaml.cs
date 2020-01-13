@@ -23,21 +23,22 @@ namespace Projet1
         public ListPersonnel()
         {
             InitializeComponent();
-            string ligne = "";
+            
+
             String[] mots;
             string fichierPersonnel = "personnel.txt";
-            StreamReader lire_r = null;
-            lire_r = new StreamReader(fichierPersonnel);
+
             List<Personnel> liste_personnel = new List<Personnel>();
             string affichage="";
-            while (lire_r.Peek() > 0)    //Creation d'un Liste de tous les joueurs en competition
+            string[] lignes = File.ReadAllLines(fichierPersonnel);
+            for (int i = 0; i < lignes.Length - 1; i++)
             {
-                ligne = lire_r.ReadLine();
-                mots = ligne.Split(',');
+                string ligne_num = lignes[i];
+                mots = ligne_num.Split(',');
                 Personnel perso = new Personnel();
                 perso.Nom = mots[0];
                 perso.Prenom = mots[1];
-                String[] date = mots[3].Split('/');
+                String[] date = mots[2].Split('/');
                 int d_j = int.Parse(date[0]);
                 int d_m = int.Parse(date[1]);
                 int d_a = int.Parse(date[2]);
