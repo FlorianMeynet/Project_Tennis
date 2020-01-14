@@ -79,7 +79,7 @@ namespace Projet1
             string fichierMembre_compet = "joueur_compet.txt";
             List<Joueur_competition> liste_j_c = new List<Joueur_competition>();
             string[] lignes = File.ReadAllLines(fichierMembre_compet);
-            for (int i = 0; i < lignes.Length-1; i++)
+            for (int i = 0; i < lignes.Length; i++)
             {
                 string ligne_num = lignes[i];
                 mots = ligne_num.Split(',');
@@ -126,7 +126,7 @@ namespace Projet1
             List<Joueur_loisir> liste_j_l = new List<Joueur_loisir>();
 
             string[] lignes = File.ReadAllLines(fichierMembre_loisir);
-            for (int i = 0; i < lignes.Length-1; i++)  //Un retour a la ligne est créé tous le temps
+            for (int i = 0; i < lignes.Length; i++)  //Un retour a la ligne est créé tous le temps
             {
                 string ligne_num = lignes[i];
                 mots = ligne_num.Split(',');

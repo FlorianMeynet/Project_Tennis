@@ -66,6 +66,9 @@
       <DependentUpon>Autres.xaml</DependentUpon>
     </Compile>
     <Compile Include="Capitaine.cs" />
+    <Compile Include="Ca_commentaire.xaml.cs">
+      <DependentUpon>Ca_commentaire.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Ca_marche.xaml.cs">
       <DependentUpon>Ca_marche.xaml</DependentUpon>
     </Compile>
@@ -132,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Autres.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ca_commentaire.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

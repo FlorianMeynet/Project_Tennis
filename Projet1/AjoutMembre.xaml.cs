@@ -64,7 +64,7 @@ namespace Projet1
             {
                 lire = new StreamWriter(fichierMembre_compet,true);
 
-                lire.WriteLine("\n"+n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "," + c);
+                lire.Write("\n" + n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v + "," + c);
                 lire.Close();
 
             }
@@ -72,7 +72,7 @@ namespace Projet1
             {
                 lire = new StreamWriter(fichierMembre_loisir,true);
                 
-                lire.WriteLine("\n"+n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v);
+                lire.Write("\n"+n + "," + p + "," + d_j + "/" + d_m + "/" + d_a + "," + em + "," + t + "," + seexe + "," + v);
                 lire.Close();
             }
 

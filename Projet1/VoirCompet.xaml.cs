@@ -29,7 +29,7 @@ namespace Projet1
 
             string[] lignes = File.ReadAllLines(fichierCompet_individuel);
 
-            for (int i = 0; i < lignes.Length - 1; i++)  //Un retour a la ligne est créé tous le temps donc -1 pour pas sortir de la boucle apres
+            for (int i = 0; i < lignes.Length; i++)  //Un retour a la ligne est créé tous le temps donc -1 pour pas sortir de la boucle apres
             {
                 string ligne_num = lignes[i];
                 mots = ligne_num.Split(',');

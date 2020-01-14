@@ -49,8 +49,7 @@ namespace Projet1
             string anne_max = annee_max.Text;
 
             lire = new StreamWriter(fichier_compet_equipe, true);
-            lire.WriteLine(l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," 
-                + match_simple + "," + match_double + ","+ anne_min + "/" + anne_max);
+            lire.Write("\n"+l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," + match_simple + "," + match_double + ","+ anne_min + "/" + anne_max);
             lire.Close();
             Ca_marche a = new Ca_marche();
             a.Show();

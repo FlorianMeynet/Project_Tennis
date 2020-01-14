@@ -31,7 +31,7 @@ namespace Projet1
             List<Personnel> liste_personnel = new List<Personnel>();
             string affichage="";
             string[] lignes = File.ReadAllLines(fichierPersonnel);
-            for (int i = 0; i < lignes.Length - 1; i++)
+            for (int i = 0; i < lignes.Length; i++)
             {
                 string ligne_num = lignes[i];
                 mots = ligne_num.Split(',');

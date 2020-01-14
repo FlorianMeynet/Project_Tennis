@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Projet1
 {
@@ -29,6 +30,20 @@ namespace Projet1
             Autres a = new Autres();
             a.Show();
             this.Close();
+        }
+
+        private void Soumettre(object sender, RoutedEventArgs e)
+        {
+            string comment = commentaire.Text;
+            string fichier_commentaire = "commentaire.txt";
+
+            StreamWriter lire = new StreamWriter(fichier_commentaire, true);
+            lire.Write("\n" +"Commentaire :"+ comment);
+            lire.Close();
+            Ca_commentaire a = new Ca_commentaire();
+            a.Show();
+            this.Close();
+
         }
     }
 }
