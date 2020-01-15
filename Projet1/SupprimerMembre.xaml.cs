@@ -37,11 +37,10 @@ namespace Projet1
             {
                 String[] mots;
                 string fichierMembre_compet = "joueur_compet.txt";
-                StreamWriter lire_w = null;
                 List<Joueur_competition> liste_j_c = new List<Joueur_competition>();
-
                 string[] lignes = File.ReadAllLines(fichierMembre_compet);
-                for (int i = 0; i < lignes.Length - 1; i++)
+
+                for (int i = 0; i < lignes.Length; i++)
                 {
                     string ligne_num = lignes[i];
                     mots = ligne_num.Split(',');
@@ -71,19 +70,25 @@ namespace Projet1
                     liste_j_c.Add(j_compet);  
                 }
 
-                    lire_w = new StreamWriter(fichierMembre_compet);
-                    foreach (Joueur_competition j_c in liste_j_c)
+                
+                foreach (Joueur_competition j_c in liste_j_c)
+                {
+                    if (j_c.Nom == supr_nom1.Text)
                     {
-                        if (j_c.Nom == supr_nom1.Text)
+                        if (j_c.Prenom == supr_prenom1.Text)
                         {
-                            if (j_c.Prenom == supr_prenom1.Text)
-                            {
-                                liste_j_c.Remove(j_c);
-                            }
+                            liste_j_c.Remove(j_c);
                         }
-                        lire_w.WriteLine(j_c.Nom + "," + j_c.Prenom + "," + j_c.Naissance.Day + "/" + j_c.Naissance.Month + "/" + j_c.Naissance.Year + "," + j_c.Adresse + "," + j_c.Telephone + "," + j_c.Sexe + "," + j_c.Ville + "," + j_c.Classement);
                     }
-                    lire_w.Close();
+                }
+
+                StreamWriter lire_w = new StreamWriter(fichierMembre_compet);
+                foreach (Joueur_competition j in liste_j_c)
+                {
+                    lire_w.Write("\n" + j.Nom + "," + j.Prenom + "," + j.Naissance.Day + "/" + j.Naissance.Month + "/" + j.Naissance.Year + "," + j.Adresse + "," + j.Telephone + "," + j.Sexe + "," + j.Ville + "," + j.Classement);
+                }
+
+                lire_w.Close();
             }
             else if((bool)supr_loisir.IsChecked)   //On agis sur les joueurs loisir
             {

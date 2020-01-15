@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Entraineur_membre
+    class Entraineur_membre : Membre
     {
+
+
+        //Gerer le faite que c'est un membre
+
     }
+
 }

@@ -8,7 +8,7 @@ namespace Projet1
 {
     class Joueur_loisir : Membre
     {
-        private string cours;//Creer une classe cours
+        private string cours;
 
         public string Cours
         {
@@ -19,8 +19,7 @@ namespace Projet1
         {
             this.cours = "";
         }
-        public Joueur_loisir(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement, string cours)
-            : base(nom, prenom, naissance, adresse, telephone, sexe, ville, paiement)
+        public Joueur_loisir(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement, string cours): base(nom, prenom, naissance, adresse, telephone, sexe, ville, paiement)
         {
             this.cours = cours;
         }

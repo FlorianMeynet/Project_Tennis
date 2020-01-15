@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Membre : Identite //, IComparable
+    class Membre : Identite , IComparable
     {
         private bool sexe; //renvoie true si c'est une femme
         private string ville;
@@ -57,7 +57,7 @@ namespace Projet1
 
         public override string ToString()
         {
-            return (base.ToString() + " " + this.Sexe_vrai() + "  " + this.ville + "  " + this.paiement);
+            return (base.ToString() + " " + this.Sexe_vrai() + "           " + this.ville + "        " + this.paiement);
         }
         public int prix(string villeclub, bool competition)
         {
@@ -91,12 +91,13 @@ namespace Projet1
             return rep;
         }
 
-       /** public int Compareto(Object val)
+       public int CompareTo(Object val)
         {
             Membre valA = (Membre)val;
             return (this.Nom.CompareTo(valA.Nom));
         }
 
+        /**
         public int CompareP(Membre b, Membre c)
         {
             return (b.Prenom.CompareTo(b.Prenom));
