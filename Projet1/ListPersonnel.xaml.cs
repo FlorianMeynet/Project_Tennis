@@ -23,13 +23,13 @@ namespace Projet1
         public ListPersonnel()
         {
             InitializeComponent();
-            
+
 
             String[] mots;
             string fichierPersonnel = "personnel.txt";
 
             List<Personnel> liste_personnel = new List<Personnel>();
-            string affichage="";
+            string affichage = "";
             string[] lignes = File.ReadAllLines(fichierPersonnel);
             for (int i = 0; i < lignes.Length; i++)
             {
@@ -55,16 +55,16 @@ namespace Projet1
                 DateTime date_entre = new DateTime(d_ea, d_em, d_ej);
                 perso.Date_entree = date_entre;
                 liste_personnel.Add(perso);
-
-                foreach (Personnel pers in liste_personnel)
-                {
-                    affichage += pers.ToString()+"\n";
-
-                }
-                lise.Text=(affichage);
             }
+            foreach (Personnel pers in liste_personnel)
+            {
+                affichage += pers.ToString() + "\n";
 
+            }
+            lise.Text = (affichage);
         }
+
+        
         private void Precedent(object sender, RoutedEventArgs e)
         {
             Membres a = new Membres();
