@@ -78,6 +78,10 @@ namespace Projet1
             set { this.nb__match_gagner = value; }
         }
 
+        public override string ToString()
+        {
+            return (base.ToString()+ "           " + this.classement);
+        }
     }
 }
 

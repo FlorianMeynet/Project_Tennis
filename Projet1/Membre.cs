@@ -57,7 +57,7 @@ namespace Projet1
 
         public override string ToString()
         {
-            return (base.ToString() + " " + this.Sexe_vrai() + "           " + this.ville + "        " + this.paiement);
+            return (base.ToString() + "           " + this.Sexe_vrai() + "           " + this.ville + "           " + this.paiement);
         }
         public int prix(string villeclub, bool competition)
         {
@@ -98,7 +98,7 @@ namespace Projet1
         }
         public static int CompareP(Membre b, Membre c)
         {
-            return (-b.Prenom.CompareTo(b.Prenom));
+            return (b.Prenom.CompareTo(c.Prenom));
         }
 
         public static int CompareD(Membre b, Membre c)
@@ -107,7 +107,7 @@ namespace Projet1
         }
         public static int CompareS(Membre b, Membre c)
         {
-            return (-b.Sexe.CompareTo(c.Sexe));
+            return (b.Sexe.CompareTo(c.Sexe));
         }
         public static int CompareV(Membre b, Membre c)
         {

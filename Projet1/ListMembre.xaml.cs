@@ -89,7 +89,6 @@ namespace Projet1
                 {
                     j_compet.Sexe = false;
                 }
-
                 j_compet.Ville = mots[6];
                 j_compet.Classement = double.Parse(mots[7]);
 
@@ -117,12 +116,12 @@ namespace Projet1
             List<Joueur_loisir> liste_j_l = Liste_joueur_loisir();
             liste_j.Sort();
             liste_j_l.Sort();
-            string affichage="Joueur compet \n";
+            string affichage="Joueur compétition :\n";
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
             }
-            affichage += "\n\n Joueur Loisir :";
+            affichage += "\n\n Joueur Loisir :\n";
             foreach (Joueur_loisir j_l in liste_j_l)
             {
                 affichage += j_l.ToString() + "\n";

@@ -8,11 +8,11 @@ namespace Projet1
 {
     abstract class Identite
     {
-        private string nom;
-        private string prenom;
-        private DateTime naissance;
-        private string adresse;
-        private long telephone;
+        protected string nom;
+        protected string prenom;
+        protected DateTime naissance;
+        protected string adresse;
+        protected long telephone;
 
         public string Nom
         {
@@ -67,7 +67,7 @@ namespace Projet1
         }
         public override string ToString()
         {
-            return (this.nom + "          "+ this.prenom+ "          " + this.naissance+ "          " + this.adresse+ "          " + this.telephone);
+            return (this.nom + "          "+ this.prenom+ "          " + this.naissance.Day+"/"+ this.naissance.Month + "/" + this.naissance.Year + "          " + this.adresse+ "          " + this.telephone);
         }
 
 

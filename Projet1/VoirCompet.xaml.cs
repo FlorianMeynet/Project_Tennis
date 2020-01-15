@@ -37,7 +37,7 @@ namespace Projet1
                 compet_indiv.Nom = mots[1];
                 compet_indiv.Lieu = mots[0];
                 compet_indiv.Nb_j_min = int.Parse(mots[2]);
-                compet_indiv.Classement_max = int.Parse(mots[3]);
+                compet_indiv.Classement_max = double.Parse(mots[3]);
 
                 String list_eq = mots[4];
                 String[] j_eq = list_eq.Split('/');
