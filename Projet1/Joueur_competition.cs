@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Joueur_competition : Membre
+    class Joueur_competition : Membre,IComparable
     {
         private double classement;
         private int age;
@@ -34,7 +34,7 @@ namespace Projet1
             this.nb__match_jouer = 0;
         }
 
-        public Joueur_competition(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement, int c, int a, int p, int nb_j, int nb_g) : base(nom, prenom, naissance, adresse, telephone, sexe, ville, paiement)
+        public Joueur_competition(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement, double c, int a, int p, int nb_j, int nb_g) : base(nom, prenom, naissance, adresse, telephone, sexe, ville, paiement)
         {
             this.classement = c;
             this.age = a;
@@ -81,6 +81,16 @@ namespace Projet1
         public override string ToString()
         {
             return (base.ToString()+ "           " + this.classement);
+        }
+
+        public new int CompareTo(Object val)
+        {
+            Joueur_competition valA = (Joueur_competition)val;
+            return (this.Nom.CompareTo(valA.Nom));
+        }
+        public static int CompareC(Joueur_competition b, Joueur_competition c)
+        {
+            return (b.Classement.CompareTo(c.Classement));
         }
     }
 }
