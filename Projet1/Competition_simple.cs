@@ -56,6 +56,19 @@ namespace Projet1
                     Liste_match_simple.Add(ma);
                 }
             }
+            foreach(Match_simple m in Liste_match_simple)
+            {
+                int res = generateur.Next(0, 1);
+                if (res == 1)
+                {
+                    m.Joueur_a.Nb_match_jouer++;
+                    m.Joueur_b.Nb_match_jouer++;
+                    m.Joueur_a.Nb_match_gagner++;
+                }
+            }
+
+
+            
         } 
         public bool Assez_de_joueur()
         {

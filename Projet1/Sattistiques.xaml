@@ -18,8 +18,8 @@
         <Button Content="Résultats du club par année" HorizontalAlignment="Left" Margin="28,325,0,0" VerticalAlignment="Top" Width="275" Height="59" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="ResultatJoueur"/>
         <Button Content="Résultats des joueurs" HorizontalAlignment="Left" Margin="28,223,0,0" VerticalAlignment="Top" Width="275" Height="59" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="ResultatClub"/>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
-        <TextBlock x:Name="joueurclub" HorizontalAlignment="Left" Margin="450,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="37" Width="98"/>
-        <TextBlock x:Name="clubcompet" HorizontalAlignment="Left" Margin="330,123,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="37" Width="98"/>
+        <TextBlock x:Name="joueurclub" HorizontalAlignment="Left" Margin="450,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="37" Width="98" Foreground="White"/>
+        <TextBlock x:Name="clubcompet" HorizontalAlignment="Left" Margin="330,123,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="37" Width="98" Foreground="#FFF9F9F9"/>
         <Image HorizontalAlignment="Left" Height="324" Margin="440,76,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
 
     </Grid>

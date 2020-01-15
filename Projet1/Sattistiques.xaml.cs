@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Projet1
 {
@@ -22,8 +23,22 @@ namespace Projet1
         public Sattistiques()
         {
             InitializeComponent();
-            joueurclub.Text = "A ecrire";//Afficher le résultat de la méthode
-            clubcompet.Text = "A écrire";//Afficher le résultat de la méthode
+            string fichierCompet = "compet_individuel.txt";
+            List<Competition_simple> liste_j_c = new List<Competition_simple>();
+            string[] lignes = File.ReadAllLines(fichierCompet);
+            String[] mots;
+            double nb_j = 0;
+            for (int i = 0; i < lignes.Length; i++)
+            {
+                string ligne_num = lignes[i];
+                mots = ligne_num.Split(',');
+                String[] joueur = mots[4].Split('/');
+                nb_j += joueur.Length;
+            }
+            double res=nb_j / (double)lignes.Length;
+            joueurclub.Text = Convert.ToString(res);
+            clubcompet.Text = Convert.ToString(lignes.Length);
+
         }
         private void ResultatJoueur(object sender, RoutedEventArgs e)
         {
@@ -44,19 +59,21 @@ namespace Projet1
             this.Close();
         }
 
-        private int NbreMoyenJoueur(List<Competition_simple> list)
+        private double NbreMoyenJoueur()
         {
-            int compteur_compet = 0;
-            int compteur_joueur = 0;
-            foreach(Competition_simple elt in list)
+            string fichierCompet = "compet_individuel.txt";
+            List<Competition_simple> liste_j_c = new List<Competition_simple>();
+            string[] lignes = File.ReadAllLines(fichierCompet);
+            String[] mots;
+            double nb_j = 0;
+            for (int i = 0; i < lignes.Length; i++)
             {
-                foreach(Joueur_competition  a in elt.Liste_equipe)
-                {
-                    compteur_joueur++;
-                }
-                compteur_compet++;
+                string ligne_num = lignes[i];
+                mots = ligne_num.Split(',');
+                String[] joueur = mots[4].Split('/');
+                nb_j += joueur.Length;
             }
-            return (compteur_joueur / compteur_compet);
+            return (nb_j/(double)lignes.Length);  
         }
         private int NbreMoyenJoueur(List<Competition> list)
         {

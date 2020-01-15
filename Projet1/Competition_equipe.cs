@@ -119,8 +119,47 @@ namespace Projet1
                         equipe_b.Liste_joueur_ok.Remove(equipe_b.Liste_joueur_ok[nb2]);
                         this.Liste_joueur_ok.Remove(this.Liste_joueur_ok[na1]);
                         this.Liste_joueur_ok.Remove(this.Liste_joueur_ok[na2]);
+                        Liste_match_double.Add(ma_d);
                     }
                     
+                }
+            }
+            foreach (Match_simple m in Liste_match_simple)
+            {
+                int res = generateur.Next(0, 1);
+                if (res == 1)
+                {
+                    m.Joueur_a.Nb_match_jouer++;
+                    m.Joueur_b.Nb_match_jouer++;
+                    m.Joueur_a.Nb_match_gagner++;
+                }
+                else
+                {
+                    m.Joueur_a.Nb_match_jouer++;
+                    m.Joueur_b.Nb_match_jouer++;
+                    m.Joueur_b.Nb_match_gagner++;
+                }
+            }
+            foreach(Match_double m_d in Liste_match_double)
+            {
+                int res = generateur.Next(0, 1);
+                if (res == 1)
+                {
+                    m_d.Equipe_a.List_joueur_equipe[0].Nb_match_gagner++;
+                    m_d.Equipe_a.List_joueur_equipe[1].Nb_match_gagner++;
+                    m_d.Equipe_a.List_joueur_equipe[0].Nb_match_jouer++;
+                    m_d.Equipe_a.List_joueur_equipe[0].Nb_match_jouer++;
+                    m_d.Equipe_b.List_joueur_equipe[0].Nb_match_jouer++;
+                    m_d.Equipe_b.List_joueur_equipe[0].Nb_match_jouer++;
+                }
+                else 
+                {
+                    m_d.Equipe_b.List_joueur_equipe[0].Nb_match_gagner++;
+                    m_d.Equipe_b.List_joueur_equipe[1].Nb_match_gagner++;
+                    m_d.Equipe_a.List_joueur_equipe[0].Nb_match_jouer++;
+                    m_d.Equipe_a.List_joueur_equipe[0].Nb_match_jouer++;
+                    m_d.Equipe_b.List_joueur_equipe[0].Nb_match_jouer++;
+                    m_d.Equipe_b.List_joueur_equipe[0].Nb_match_jouer++;
                 }
             }
         }
