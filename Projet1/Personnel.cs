@@ -43,7 +43,7 @@ namespace Projet1
 
         public override string ToString()
         {
-            return (this.ToString()+ "Info_bancaire :"+this.info_bancaire +"Salaire :"+this.salaire+"Date entrée :"+this.date_entree);
+            return (base.ToString()+ "        "+this.info_bancaire + "        " + this.salaire+ "        " + this.date_entree.Day+"/"+this.date_entree.Month+"/"+this.date_entree.Year);
         }
     }
 }
