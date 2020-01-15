@@ -96,18 +96,18 @@ namespace Projet1
             Membre valA = (Membre)val;
             return (this.Nom.CompareTo(valA.Nom));
         }
-        public int CompareP(Membre b, Membre c)
+        public static int CompareP(Membre b, Membre c)
         {
-            return (b.Prenom.CompareTo(b.Prenom));
+            return (-b.Prenom.CompareTo(b.Prenom));
         }
 
         public static int CompareD(Membre b, Membre c)
         {
-            return (b.Naissance.CompareTo(c.Naissance));
+            return (-b.Naissance.CompareTo(c.Naissance));
         }
         public static int CompareS(Membre b, Membre c)
         {
-            return (b.Sexe.CompareTo(c.Sexe));
+            return (-b.Sexe.CompareTo(c.Sexe));
         }
         public static int CompareV(Membre b, Membre c)
         {
@@ -115,7 +115,7 @@ namespace Projet1
         }
         public static int ComparePA(Membre b, Membre c)
         {
-            return (b.Paiement.CompareTo(c.Paiement));
+            return (-b.Paiement.CompareTo(c.Paiement));
         }
     }
 }

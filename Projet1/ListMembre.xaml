@@ -17,12 +17,12 @@
         <TextBlock x:Name="lise" HorizontalAlignment="Left" Margin="34,95,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="298" Width="724" Foreground="White"/>
         <Button Content="Nom" HorizontalAlignment="Left" Margin="33,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Background="{x:Null}" Foreground="#FFF7F2F2" Click="Nom"/>
         <Button Content="Prénom" HorizontalAlignment="Left" Margin="119,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Foreground="#FFF7F5F5" Background="{x:Null}" Click="Prenom"/>
-        <Button Content="Sexe" HorizontalAlignment="Left" Margin="613,67,0,0" VerticalAlignment="Top" Width="51" Height="23" Foreground="White" Background="{x:Null}" Click="Sexe"/>
-        <Button Content="Classement" HorizontalAlignment="Left" Margin="540,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Background="{x:Null}" Foreground="White" Click="Salaire"/>
-        <Button Content="Type de cours" HorizontalAlignment="Left" Margin="677,67,0,0" VerticalAlignment="Top" Width="83" Height="23" Background="{x:Null}" Foreground="White" Click="Type"/>
+        <Button Content="Sexe" HorizontalAlignment="Left" Margin="533,67,0,0" VerticalAlignment="Top" Width="51" Height="23" Foreground="White" Background="{x:Null}" Click="Sexe"/>
+        <Button Content="Classement" HorizontalAlignment="Left" Margin="699,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Background="{x:Null}" Foreground="White" Click="Classement"/>
+        <Button x:Name="paiement" Content="Paiement" HorizontalAlignment="Left" Margin="597,67,0,0" VerticalAlignment="Top" Width="83" Height="23" Background="{x:Null}" Foreground="White" Click="Paiement"/>
         <Button Content="Date de naissance" HorizontalAlignment="Left" Margin="214,67,0,0" VerticalAlignment="Top" Width="102" Height="23" Background="{x:Null}" Foreground="White" Click="Naissance"/>
-        <Button Content="Email" HorizontalAlignment="Left" Margin="338,67,0,0" VerticalAlignment="Top" Width="104" Height="23" Background="{x:Null}" Foreground="White" Click="Email"/>
-        <Button Content="Téléphone" HorizontalAlignment="Left" Margin="459,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Foreground="White" Background="{x:Null}" Click="Tel"/>
+        <Button Content="Email" HorizontalAlignment="Left" Margin="338,67,0,0" VerticalAlignment="Top" Width="104" Height="23" Background="{x:Null}" Foreground="White"/>
+        <Button Content="Téléphone" HorizontalAlignment="Left" Margin="459,67,0,0" VerticalAlignment="Top" Width="68" Height="23" Foreground="White" Background="{x:Null}"/>
         <Button Content="Compétitions" HorizontalAlignment="Left" Margin="176,17,0,0" VerticalAlignment="Top" Width="129" Height="23" Background="{x:Null}" Foreground="#FFF7F2F2" Click="Competition"/>
         <Button Content="Loisirs" HorizontalAlignment="Left" Margin="338,17,0,0" VerticalAlignment="Top" Width="129" Height="23" Background="{x:Null}" Foreground="#FFF7F2F2" Click="Loisir"/>
         <Label Content="Afficher que les joueurs :" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="147" Foreground="#FFF7F2F2"/>
