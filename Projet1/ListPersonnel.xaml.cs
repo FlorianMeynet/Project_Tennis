@@ -54,7 +54,6 @@ namespace Projet1
                 int d_ea = int.Parse(date_e[2]);
                 DateTime date_entre = new DateTime(d_ea, d_em, d_ej);
                 perso.Date_entree = date_entre;
-
                 liste_personnel.Add(perso);
 
                 foreach (Personnel pers in liste_personnel)
