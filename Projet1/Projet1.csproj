@@ -107,6 +107,9 @@
       <DependentUpon>Modifier Membre.xaml</DependentUpon>
     </Compile>
     <Compile Include="Personnel.cs" />
+    <Compile Include="Reglement.xaml.cs">
+      <DependentUpon>Reglement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ResultatClub.xaml.cs">
       <DependentUpon>ResultatClub.xaml</DependentUpon>
     </Compile>
@@ -119,6 +122,9 @@
     <Compile Include="Stage_Junior.cs" />
     <Compile Include="SupprimerMembre.xaml.cs">
       <DependentUpon>SupprimerMembre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tri.xaml.cs">
+      <DependentUpon>Tri.xaml</DependentUpon>
     </Compile>
     <Compile Include="TrouverPartenaire.xaml.cs">
       <DependentUpon>TrouverPartenaire.xaml</DependentUpon>
@@ -195,6 +201,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Reglement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResultatClub.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -208,6 +218,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SupprimerMembre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tri.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -250,6 +264,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="729453.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Tri-Balles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Tri-selectif.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

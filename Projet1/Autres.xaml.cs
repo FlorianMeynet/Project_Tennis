@@ -42,5 +42,19 @@ namespace Projet1
             a.Show();
             this.Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Tri a = new Tri();
+            a.Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Reglement a = new Reglement();
+            a.Show();
+            this.Close();
+        }
     }
 }

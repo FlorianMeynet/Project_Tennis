@@ -99,8 +99,6 @@ namespace Projet1
         public ListMembre()
         {
             InitializeComponent();
-
-            
         }
         private void Precedent(object sender, RoutedEventArgs e)
         {
