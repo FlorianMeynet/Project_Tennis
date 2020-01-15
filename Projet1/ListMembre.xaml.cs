@@ -34,7 +34,6 @@ namespace Projet1
 
         private void Nom(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void Prenom(object sender, RoutedEventArgs e)

@@ -96,8 +96,6 @@ namespace Projet1
             Membre valA = (Membre)val;
             return (this.Nom.CompareTo(valA.Nom));
         }
-
-        /**
         public int CompareP(Membre b, Membre c)
         {
             return (b.Prenom.CompareTo(b.Prenom));
@@ -118,6 +116,6 @@ namespace Projet1
         public static int ComparePA(Membre b, Membre c)
         {
             return (b.Paiement.CompareTo(c.Paiement));
-        }**/
+        }
     }
 }
