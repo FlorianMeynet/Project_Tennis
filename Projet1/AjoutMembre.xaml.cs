@@ -58,8 +58,6 @@ namespace Projet1
             {
                 seexe = "F"; 
             }
-
-           
             if ((bool)compet.IsChecked)
             {
                 lire = new StreamWriter(fichierMembre_compet,true);

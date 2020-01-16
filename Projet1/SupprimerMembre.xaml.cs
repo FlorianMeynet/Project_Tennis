@@ -70,15 +70,11 @@ namespace Projet1
                     liste_j_c.Add(j_compet);  
                 }
 
-                
                 foreach (Joueur_competition j_c in liste_j_c)
                 {
-                    if (j_c.Nom == supr_nom1.Text)
+                    if (j_c.Nom == supr_nom1.Text && j_c.Prenom == supr_prenom1.Text) 
                     {
-                        if (j_c.Prenom == supr_prenom1.Text)
-                        {
-                            liste_j_c.Remove(j_c);
-                        }
+                        liste_j_c.Remove(j_c);
                     }
                 }
 
@@ -90,11 +86,12 @@ namespace Projet1
 
                 lire_w.Close();
             }
+
             else if((bool)supr_loisir.IsChecked)   //On agis sur les joueurs loisir
             {
                 String[] mots;
                 string fichierMembre_loisir = "joueur_loisir.txt";
-                StreamWriter lire_w = null;
+                
 
                 List<Joueur_loisir> liste_j_l = new List<Joueur_loisir>();
 
@@ -128,19 +125,23 @@ namespace Projet1
                     liste_j_l.Add(j_loisir);
                 }
 
-                lire_w = new StreamWriter(fichierMembre_loisir);
-
                 foreach (Joueur_loisir j_c in liste_j_l)
                 {
-                    if (j_c.Nom == supr_nom1.Text)
+                    if (j_c.Nom == supr_nom1.Text && j_c.Prenom == supr_prenom1.Text) 
                     {
-                        if (j_c.Prenom == supr_prenom1.Text)
-                        {
                             liste_j_l.Remove(j_c);
-                        }
+                        
                     }
-                    lire_w.WriteLine(j_c.Nom + "," + j_c.Prenom + "," + j_c.Naissance.Day + "/" + j_c.Naissance.Month + "/" + j_c.Naissance.Year + "," + j_c.Adresse + "," + j_c.Telephone + "," + j_c.Sexe + "," + j_c.Ville);
+                    
                 }
+
+                StreamWriter lire_w = new StreamWriter(fichierMembre_loisir);
+
+                foreach (Joueur_loisir j_l in liste_j_l)
+                {
+                    lire_w.Write("\n" + j_l.Nom + "," + j_l.Prenom + "," + j_l.Naissance.Day + "/" + j_l.Naissance.Month + "/" + j_l.Naissance.Year + "," + j_l.Adresse + "," + j_l.Telephone + "," + j_l.Sexe + "," + j_l.Ville);
+                }
+
                 lire_w.Close();
             }
         }

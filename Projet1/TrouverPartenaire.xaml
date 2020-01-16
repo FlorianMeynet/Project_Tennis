@@ -15,19 +15,21 @@
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
         <Image HorizontalAlignment="Left" Height="324" Margin="440,76,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
-        <Label Content="Quel est votre classement : " HorizontalAlignment="Left" Margin="33,68,0,0" VerticalAlignment="Top" Height="30" Width="159" Foreground="White"/>
-        <TextBox x:Name="classement" HorizontalAlignment="Left" Height="23" Margin="201,68,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
-        <TextBlock x:Name="trouver" HorizontalAlignment="Left" Margin="10,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="192" Width="407" Foreground="White"/>
-        <Label Content="Uniquement pour les joueurs de compétition" HorizontalAlignment="Left" Margin="33,31,0,0" VerticalAlignment="Top" Height="30" Width="306" Foreground="White"/>
-        <Button Content="Chercher" HorizontalAlignment="Left" Margin="339,68,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Chercher"/>
-        <Label HorizontalAlignment="Left" Margin="33,103,0,0" VerticalAlignment="Top" Height="30" Width="39" Foreground="White"/>
-        <TextBox x:Name="jour" HorizontalAlignment="Left" Height="23" Margin="71,146,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
-        <Label Content="Mois" HorizontalAlignment="Left" Margin="146,146,0,0" VerticalAlignment="Top" Height="26" Width="40" Foreground="White"/>
-        <TextBox x:Name="mois" HorizontalAlignment="Left" Height="23" Margin="191,146,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
-        <Label Content="Année" HorizontalAlignment="Left" Margin="251,139,0,0" VerticalAlignment="Top" Height="30" Width="43" Foreground="White" RenderTransformOrigin="0.628,1.15"/>
-        <TextBox x:Name="annee" HorizontalAlignment="Left" Height="23" Margin="325,146,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
-        <Label Content="Jour" HorizontalAlignment="Left" Margin="26,146,0,0" VerticalAlignment="Top" Height="26" Width="40" Foreground="White"/>
-        <Label Content="Date de naissance" HorizontalAlignment="Left" Margin="33,107,0,0" VerticalAlignment="Top" Height="26" Width="118" Foreground="White"/>
+        <TextBlock x:Name="trouver" HorizontalAlignment="Left" Margin="10,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="192" Width="458" Foreground="White"/>
+        <Label Content="Chercher une personne avec qui jouer :" HorizontalAlignment="Left" Margin="37,23,0,0" VerticalAlignment="Top" Height="30" Width="306" Foreground="White"/>
+        <Button Content="Chercher" HorizontalAlignment="Left" Margin="170,181,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Chercher" Height="24"/>
+        <Label HorizontalAlignment="Left" Margin="33,91,0,0" VerticalAlignment="Top" Height="30" Width="39" Foreground="White"/>
+        <TextBox x:Name="jour" HorizontalAlignment="Left" Height="23" Margin="71,134,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
+        <Label Content="Mois" HorizontalAlignment="Left" Margin="146,134,0,0" VerticalAlignment="Top" Height="26" Width="40" Foreground="White"/>
+        <TextBox x:Name="mois" HorizontalAlignment="Left" Height="23" Margin="191,134,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
+        <Label Content="Année" HorizontalAlignment="Left" Margin="251,127,0,0" VerticalAlignment="Top" Height="30" Width="43" Foreground="White" RenderTransformOrigin="0.628,1.15"/>
+        <TextBox x:Name="annee" HorizontalAlignment="Left" Height="23" Margin="325,134,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
+        <Label Content="Jour" HorizontalAlignment="Left" Margin="26,134,0,0" VerticalAlignment="Top" Height="26" Width="40" Foreground="White"/>
+        <Label Content="Date de naissance" HorizontalAlignment="Left" Margin="19,97,0,0" VerticalAlignment="Top" Height="26" Width="118" Foreground="White"/>
+        <TextBox x:Name="nom" HorizontalAlignment="Left" Height="24" Margin="96,66,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="69"/>
+        <TextBox x:Name="prenom" HorizontalAlignment="Left" Height="24" Margin="273,66,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="90"/>
+        <Label Content="Prenom" HorizontalAlignment="Left" Margin="204,66,0,0" VerticalAlignment="Top" Height="30" Width="56" Foreground="White" RenderTransformOrigin="0.628,1.15"/>
+        <Label Content="Nom" HorizontalAlignment="Left" Margin="37,66,0,0" VerticalAlignment="Top" Height="26" Width="40" Foreground="White"/>
 
     </Grid>
 </Window>
