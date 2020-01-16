@@ -32,7 +32,6 @@ namespace Projet1
             this.nb_j_min = 0;
             this.annee_min = 0;
             this.annee_max = 0;
-            this.
 
 
         }

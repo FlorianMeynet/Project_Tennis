@@ -67,21 +67,16 @@ namespace Projet1
 
                     j_compet.Ville = mots[6];
                     j_compet.Classement = double.Parse(mots[7]);
-                    liste_j_c.Add(j_compet);  
-                }
-
-                foreach (Joueur_competition j_c in liste_j_c)
-                {
-                    if (j_c.Nom == supr_nom1.Text && j_c.Prenom == supr_prenom1.Text) 
+                    if (j_compet.Nom != supr_nom1.Text && j_compet.Prenom != supr_prenom1.Text)
                     {
-                        liste_j_c.Remove(j_c);
+                        liste_j_c.Add(j_compet);
                     }
                 }
 
                 StreamWriter lire_w = new StreamWriter(fichierMembre_compet);
                 foreach (Joueur_competition j in liste_j_c)
                 {
-                    lire_w.Write("\n" + j.Nom + "," + j.Prenom + "," + j.Naissance.Day + "/" + j.Naissance.Month + "/" + j.Naissance.Year + "," + j.Adresse + "," + j.Telephone + "," + j.Sexe + "," + j.Ville + "," + j.Classement);
+                    lire_w.Write(j.Nom + "," + j.Prenom + "," + j.Naissance.Day + "/" + j.Naissance.Month + "/" + j.Naissance.Year + "," + j.Adresse + "," + j.Telephone + "," + j.Sexe + "," + j.Ville + "," + j.Classement+"\n");
                 }
 
                 lire_w.Close();
@@ -91,12 +86,10 @@ namespace Projet1
             {
                 String[] mots;
                 string fichierMembre_loisir = "joueur_loisir.txt";
-                
-
                 List<Joueur_loisir> liste_j_l = new List<Joueur_loisir>();
-
                 string[] lignes = File.ReadAllLines(fichierMembre_loisir);
-                for (int i = 0; i < lignes.Length - 1; i++)
+
+                for (int i = 0; i < lignes.Length; i++)
                 {
                     string ligne_num = lignes[i];
                     mots = ligne_num.Split(',');
@@ -122,24 +115,17 @@ namespace Projet1
                     }
                     j_loisir.Ville = mots[6];
 
-                    liste_j_l.Add(j_loisir);
-                }
-
-                foreach (Joueur_loisir j_c in liste_j_l)
-                {
-                    if (j_c.Nom == supr_nom1.Text && j_c.Prenom == supr_prenom1.Text) 
+                    if(j_loisir.Nom != supr_nom1.Text && j_loisir.Prenom != supr_prenom1.Text)
                     {
-                            liste_j_l.Remove(j_c);
-                        
+                        liste_j_l.Add(j_loisir);
                     }
-                    
                 }
 
                 StreamWriter lire_w = new StreamWriter(fichierMembre_loisir);
 
                 foreach (Joueur_loisir j_l in liste_j_l)
                 {
-                    lire_w.Write("\n" + j_l.Nom + "," + j_l.Prenom + "," + j_l.Naissance.Day + "/" + j_l.Naissance.Month + "/" + j_l.Naissance.Year + "," + j_l.Adresse + "," + j_l.Telephone + "," + j_l.Sexe + "," + j_l.Ville);
+                    lire_w.Write(j_l.Nom + "," + j_l.Prenom + "," + j_l.Naissance.Day + "/" + j_l.Naissance.Month + "/" + j_l.Naissance.Year + "," + j_l.Adresse + "," + j_l.Telephone + "," + j_l.Sexe + "," + j_l.Ville+"\n");
                 }
 
                 lire_w.Close();
