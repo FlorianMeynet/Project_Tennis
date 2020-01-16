@@ -25,8 +25,6 @@ namespace Projet1
             InitializeComponent();
         }
 
-<<<<<<< HEAD
-=======
         private List<Joueur_competition> Liste_joueur_compet()
         {
             String[] mots;
@@ -100,7 +98,6 @@ namespace Projet1
             return (liste_j_l);
         }
 
->>>>>>> 231eba2ab7ef6f32f46ffe369d09fccc344119f3
         private void Precedent(object sender, RoutedEventArgs e)
         {
             Autres a = new Autres();
@@ -109,9 +106,6 @@ namespace Projet1
         }
 
         private void Chercher(object sender, RoutedEventArgs e)
-<<<<<<< HEAD
-    { }
-=======
         {
             int d_j = int.Parse(jour.Text);
             int d_m = int.Parse(mois.Text);
@@ -124,9 +118,9 @@ namespace Projet1
             string affichage = "Joueur competition du meme age : ";
             foreach (Joueur_competition j_c in list_j_c)
             {
-                if ((j_c.Naissance.Year == date_n.Year) && (j_c.Nom!=nomm )&&(j_c.Prenom!=pren))
+                if ((j_c.Naissance.Year == date_n.Year) && (j_c.Nom != nomm) && (j_c.Prenom != pren))
                 {
-                    affichage += "\n"+ j_c.Nom + "  " + j_c.Prenom + "   " + j_c.Telephone;
+                    affichage += "\n" + j_c.Nom + "  " + j_c.Prenom + "   " + j_c.Telephone;
                 }
             }
 
@@ -135,12 +129,11 @@ namespace Projet1
             {
                 if ((j_l.Naissance.Year == date_n.Year) && (j_l.Nom != nomm) && (j_l.Prenom != pren))
                 {
-                    affichage +="\n"+ j_l.Nom+"  "+j_l.Prenom+"   "+j_l.Telephone ;
+                    affichage += "\n" + j_l.Nom + "  " + j_l.Prenom + "   " + j_l.Telephone;
                 }
             }
             trouver.Text = affichage;
 
         }
->>>>>>> 231eba2ab7ef6f32f46ffe369d09fccc344119f3
     }
 }
