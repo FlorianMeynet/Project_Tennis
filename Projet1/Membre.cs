@@ -12,7 +12,6 @@ namespace Projet1
         private string ville;
         private bool paiement;
 
-
         public Membre()
         {
             this.sexe = true;
@@ -25,6 +24,7 @@ namespace Projet1
             this.ville = ville;
             this.paiement = paiement;
         }
+
         public bool adulte()
         {
             bool rep = false;
@@ -90,6 +90,7 @@ namespace Projet1
             }
             return rep;
         }
+
 
        public int CompareTo(Object val)
         {

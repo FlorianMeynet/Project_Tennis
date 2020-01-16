@@ -96,6 +96,58 @@ namespace Projet1
             }
             return (liste_j_c);
         }
+        private List<Personnel> Liste_personnel()
+        {
+            String[] mots;
+            string fichier_p = "personnel.txt";
+            List<Personnel> liste_p = new List<Personnel>();
+
+            string[] lignes = File.ReadAllLines(fichier_p);
+            for (int i = 0; i < lignes.Length; i++)  //Un retour a la ligne est créé tous le temps
+            {
+                string ligne_num = lignes[i];
+                mots = ligne_num.Split(',');
+                Personnel p = new Personnel();
+                p.Nom = mots[0];
+                p.Prenom = mots[1];
+                String[] date = mots[2].Split('/');
+                int d_j = int.Parse(date[0]);
+                int d_m = int.Parse(date[1]);
+                int d_a = int.Parse(date[2]);
+
+                DateTime date_n = new DateTime(d_a, d_m, d_j);
+                p.Naissance = (date_n);
+                p.Adresse = mots[3];
+                p.Telephone = long.Parse(mots[4]);
+                if (mots[5] == "F")
+                {
+                    p.Sexe = true;
+                }
+                else
+                {
+                    p.Sexe = false;
+                }
+                p.Ville = mots[6];
+                p.Info_bancaire = mots[7];
+                p.Salaire = int.Parse(mots[8]);
+                String[] date_entree = mots[9].Split('/');
+                int d_jp = int.Parse(date_entree[0]);
+                int d_mp = int.Parse(date_entree[1]);
+                int d_ap = int.Parse(date_entree[2]);
+                DateTime date_e = new DateTime(d_ap, d_mp, d_jp);
+                p.Date_entree = date_e;
+                if (mots[10] == "true")
+                {
+                    p.Est_entraineur_joueur = true;
+                }
+                else
+                {
+                    p.Est_entraineur_joueur = false;
+                }
+                liste_p.Add(p);
+            }
+            return (liste_p);
+        }
         public ListMembre()
         {
             InitializeComponent();
@@ -114,7 +166,7 @@ namespace Projet1
             List<Joueur_loisir> liste_j_l = Liste_joueur_loisir();
             liste_j.Sort();
             liste_j_l.Sort();
-            string affichage="Joueur compétition :\n";
+            string affichage = "Joueur compétition :\n";
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
@@ -224,7 +276,15 @@ namespace Projet1
         {
             string affichage = "";
             List<Joueur_competition> liste_j = Liste_joueur_compet();
+            List<Personnel> liste =Liste_personnel();
 
+            foreach (Personnel elt in liste)
+            {
+                if (elt.Est_entraineur_joueur)
+                {
+                    liste_j.Add(new Joueur_competition(elt.Nom, elt.Prenom, elt.Naissance, elt.Adresse, elt.Telephone, elt.Sexe, elt.Ville, true, -15, 0, 0, 0, 0));
+                }
+            }
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
@@ -241,9 +301,6 @@ namespace Projet1
                 affichage += j_c.ToString() + "\n";
             }
             lise.Text = affichage;
-
         }
-
-        
     }
 }
