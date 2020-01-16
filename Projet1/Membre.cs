@@ -118,5 +118,6 @@ namespace Projet1
         {
             return (-b.Paiement.CompareTo(c.Paiement));
         }
+
     }
 }

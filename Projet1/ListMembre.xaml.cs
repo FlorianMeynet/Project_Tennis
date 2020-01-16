@@ -94,6 +94,14 @@ namespace Projet1
 
                 liste_j_c.Add(j_compet);
             }
+            List<Personnel> liste = Liste_personnel();
+            foreach (Personnel elt in liste)
+            {
+                if (elt.Est_entraineur_joueur)
+                {
+                    liste_j_c.Add(new Joueur_competition(elt.Nom, elt.Prenom, elt.Naissance, elt.Adresse, elt.Telephone, elt.Sexe, elt.Ville, true, -15, 0, 0, 0, 0));
+                }
+            }
             return (liste_j_c);
         }
         private List<Personnel> Liste_personnel()
@@ -151,6 +159,8 @@ namespace Projet1
         public ListMembre()
         {
             InitializeComponent();
+            this.Height = 700;
+            lise.Height = 500;
         }
         private void Precedent(object sender, RoutedEventArgs e)
         {
@@ -166,7 +176,7 @@ namespace Projet1
             List<Joueur_loisir> liste_j_l = Liste_joueur_loisir();
             liste_j.Sort();
             liste_j_l.Sort();
-            string affichage = "Joueur compétition :\n";
+            string affichage = "Joueur Compétition :\n";
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
@@ -186,13 +196,13 @@ namespace Projet1
             liste_j.Sort((x, y) => Membre.CompareP(x, y));
             liste_j_l.Sort((x, y) => Membre.CompareP(x, y));
 
-            string affichage = "Joueur compet \n";
+            string affichage = "Joueur Compétition \n";
 
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
             }
-            affichage += "\n\n Joueur Loisir :";
+            affichage += "\n\n Joueur Loisir :\n";
             foreach (Joueur_loisir j_l in liste_j_l)
             {
                 affichage += j_l.ToString() + "\n";
@@ -206,7 +216,7 @@ namespace Projet1
             liste_j.Sort((x, y) => Membre.CompareS(x, y));
             liste_j_l.Sort((x, y) => Membre.CompareS(x, y));
 
-            string affichage = "Joueur compet \n";
+            string affichage = "Joueur Compétition \n";
 
             foreach (Joueur_competition j_c in liste_j)
             {
@@ -226,13 +236,13 @@ namespace Projet1
             liste_j.Sort((x, y) => Membre.CompareD(x, y));
             liste_j_l.Sort((x, y) => Membre.CompareD(x, y));
 
-            string affichage = "Joueur compet \n";
+            string affichage = "Joueur Compétition \n";
 
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
             }
-            affichage += "\n\n Joueur Loisir :";
+            affichage += "\n\n Joueur Loisir :\n";
             foreach (Joueur_loisir j_l in liste_j_l)
             {
                 affichage += j_l.ToString() + "\n";
@@ -246,13 +256,13 @@ namespace Projet1
             liste_j.Sort((x, y) => Membre.ComparePA(x, y));
             liste_j_l.Sort((x, y) => Membre.ComparePA(x, y));
 
-            string affichage = "Joueur compet \n";
+            string affichage = "Joueur Compétition : \n";
 
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
             }
-            affichage += "\n\n Joueur Loisir :";
+            affichage += "\n\n Joueur Loisir :\n";
             foreach (Joueur_loisir j_l in liste_j_l)
             {
                 affichage += j_l.ToString() + "\n";
@@ -263,9 +273,9 @@ namespace Projet1
         private void Classement(object sender, RoutedEventArgs e)
         {
             List<Joueur_competition> liste_j = Liste_joueur_compet();
-            liste_j.Sort((x, y) => Membre.ComparePA(x, y));
+            liste_j.Sort((x, y) => Joueur_competition.CompareC(x, y));
 
-            string affichage = "Joueur compet \n";
+            string affichage = "Joueur Compétition : \n";
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
@@ -276,15 +286,7 @@ namespace Projet1
         {
             string affichage = "";
             List<Joueur_competition> liste_j = Liste_joueur_compet();
-            List<Personnel> liste =Liste_personnel();
 
-            foreach (Personnel elt in liste)
-            {
-                if (elt.Est_entraineur_joueur)
-                {
-                    liste_j.Add(new Joueur_competition(elt.Nom, elt.Prenom, elt.Naissance, elt.Adresse, elt.Telephone, elt.Sexe, elt.Ville, true, -15, 0, 0, 0, 0));
-                }
-            }
             foreach (Joueur_competition j_c in liste_j)
             {
                 affichage += j_c.ToString() + "\n";
