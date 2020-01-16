@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Competition
+    class Competition : Evenement
     {
         private string lieu;
         private List<Joueur_competition> liste_equipe;
@@ -32,10 +32,11 @@ namespace Projet1
             this.nb_j_min = 0;
             this.annee_min = 0;
             this.annee_max = 0;
+            this.
 
 
         }
-        public Competition(string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m,int annee_min,int annee_max)
+        public Competition(string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m,int annee_min,int annee_max,DateTime date_debut) : base(date_debut)
         {
             this.lieu = l;
             this.liste_equipe = l_e;

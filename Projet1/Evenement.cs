@@ -20,6 +20,10 @@ namespace Projet1
         {
             this.date=d;
         }
+        public Evenement()
+        {
+            this.date = new DateTime();
+        }
 
     }
 }

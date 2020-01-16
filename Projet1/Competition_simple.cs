@@ -20,7 +20,7 @@ namespace Projet1
             this.resultat_match = null;
         }
 
-        public Competition_simple(int nb_match, string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, int niv, int nb_j_m,int annee_min,int annee_max): base(l,l_e,c,nb_j,n,niv,nb_j_m,annee_min,annee_max)
+        public Competition_simple(int nb_match, string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, int niv, int nb_j_m,int annee_min,int annee_max, DateTime date_debut) : base(l,l_e,c,nb_j,n,niv,nb_j_m,annee_min, annee_max,date_debut)
         {
             this.nb_match = nb_match;
             this.resultat_match = null;
