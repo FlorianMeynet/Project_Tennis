@@ -34,11 +34,18 @@
             <TextBox x:Name="annee_max" HorizontalAlignment="Left" Height="23" Margin="227,274,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="51"/>
             <Label Content="Année Min " HorizontalAlignment="Left" Margin="12,273,0,0" VerticalAlignment="Top" Height="30" Width="72" Foreground="White"/>
             <Label Content="Année Max " HorizontalAlignment="Left" Margin="148,273,0,0" VerticalAlignment="Top" Height="30" Width="74" Foreground="White"/>
-            <Label Content="Nombre de match simple : " HorizontalAlignment="Left" Margin="401,97,-272,0" VerticalAlignment="Top" Height="30" Width="155" Foreground="White"/>
-            <TextBox x:Name="nbre_match_simple" HorizontalAlignment="Left" Height="23" Margin="583,98,-360,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61"  />
-            <Label Content="Nombre de match double : " HorizontalAlignment="Left" Margin="401,57,-272,0" VerticalAlignment="Top" Height="30" Width="155" Foreground="White"/>
-            <TextBox x:Name="nbre_match_double" HorizontalAlignment="Left" Height="23" Margin="583,58,-360,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61"  />
+            <Label Content="Nombre de match simple : " HorizontalAlignment="Left" Margin="361,119,-232,0" VerticalAlignment="Top" Height="30" Width="155" Foreground="White"/>
+            <TextBox x:Name="nbre_match_simple" HorizontalAlignment="Left" Height="23" Margin="537,122,-314,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61"  />
+            <Label Content="Nombre de match double : " HorizontalAlignment="Left" Margin="364,84,-235,0" VerticalAlignment="Top" Height="30" Width="155" Foreground="White"/>
+            <TextBox x:Name="nbre_match_double" HorizontalAlignment="Left" Height="23" Margin="535,84,-312,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="61"  />
         </Grid>
+        <Label Content="Date de début de la compétition : " HorizontalAlignment="Left" Margin="425,73,0,0" VerticalAlignment="Top" Height="30" Width="202" Foreground="White"/>
+        <TextBox x:Name="annee" HorizontalAlignment="Left" Height="23" Margin="706,107,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
+        <TextBox x:Name="mois" HorizontalAlignment="Left" Height="23" Margin="587,107,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
+        <TextBox x:Name="jour" HorizontalAlignment="Left" Height="23" Margin="469,107,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55"/>
+        <Label Content="Jour : " HorizontalAlignment="Left" Margin="425,107,0,0" VerticalAlignment="Top" Height="30" Width="43" Foreground="White"/>
+        <Label Content="Mois : " HorizontalAlignment="Left" Margin="537,107,0,0" VerticalAlignment="Top" Height="24" Width="43" Foreground="White"/>
+        <Label Content="Année : " HorizontalAlignment="Left" Margin="653,107,0,0" VerticalAlignment="Top" Height="24" Width="43" Foreground="White"/>
 
     </Grid>
 </Window>

@@ -54,7 +54,11 @@ namespace Projet1
                 String[] cat_l = cat.Split('/');
                 compet_indiv.Annee_min = int.Parse(cat_l[0]);
                 compet_indiv.Annee_max = int.Parse(cat_l[1]);
-
+                String[] date = mots[8].Split('/');
+                int d_j = int.Parse(date[0]);
+                int d_m = int.Parse(date[1]);
+                int d_a = int.Parse(date[2]);
+                compet_indiv.Date = new DateTime(d_a, d_m, d_j);
                 liste_c_i.Add(compet_indiv);
             }
 

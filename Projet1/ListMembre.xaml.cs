@@ -39,7 +39,6 @@ namespace Projet1
                 int d_j = int.Parse(date[0]);
                 int d_m = int.Parse(date[1]);
                 int d_a = int.Parse(date[2]);
-
                 DateTime date_n = new DateTime(d_a, d_m, d_j);
                 j_loisir.Naissance = (date_n);
                 j_loisir.Adresse = mots[3];
