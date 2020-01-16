@@ -67,6 +67,7 @@ namespace Projet1
 
                     j_compet.Ville = mots[6];
                     j_compet.Classement = double.Parse(mots[7]);
+
                     if (j_compet.Nom != supr_nom1.Text && j_compet.Prenom != supr_prenom1.Text)
                     {
                         liste_j_c.Add(j_compet);
