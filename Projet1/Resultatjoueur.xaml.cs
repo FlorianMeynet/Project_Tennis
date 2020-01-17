@@ -125,7 +125,7 @@ namespace Projet1
             string affichage = "";
             foreach(Joueur_competition j in list_j_t)
             {
-                affichage += (j.Nom + "    " + j.Prenom + "    " + j.Nb_match_jouer + "    " + j.Nb_match_gagner + "    " + (j.Nb_match_jouer - j.Nb_match_gagner));
+                affichage += (j.Nom + "                    " + j.Prenom + "                                      " + j.Nb_match_jouer + "                                      " + j.Nb_match_gagner + "                                      " + (j.Nb_match_jouer - j.Nb_match_gagner+"\n"));
             }
             lise.Text = affichage;
         }
