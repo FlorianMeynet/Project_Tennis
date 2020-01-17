@@ -178,7 +178,7 @@ namespace Projet1
             string afi = "";
             for(int i=0;i<MatchAnnee().Count;i++)
             {
-                afi+= Convert.ToString(MatchAnnee().ElementAt(i).Key) +"           "+ Convert.ToString(MatchAnnee().ElementAt(i).Value) + "\n";
+                afi+= Convert.ToString(MatchAnnee().ElementAt(i).Key) +"                          "+ Convert.ToString(MatchAnnee().ElementAt(i).Value) + "\n";
             }
             return afi;
         }

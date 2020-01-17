@@ -72,7 +72,7 @@ namespace Projet1
         } 
         public bool Assez_de_joueur()
         {
-            return (this.Nb_joueur >= this.Nb_j_min);
+            return (this.Nb_joueur() >= this.Nb_j_min);
         }
 
         public bool Compet_end()

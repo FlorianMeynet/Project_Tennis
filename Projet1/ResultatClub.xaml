@@ -17,7 +17,7 @@
         <Label Content="Match joués" HorizontalAlignment="Left" Margin="137,84,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Label Content="Année" HorizontalAlignment="Left" Margin="38,84,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Image HorizontalAlignment="Left" Height="324" Margin="440,76,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
-        <TextBlock x:Name="Result" HorizontalAlignment="Left" Height="258" Margin="38,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Foreground="White"/>
+        <TextBlock x:Name="Result" HorizontalAlignment="Left" Height="258" Margin="46,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Foreground="White"/>
 
     </Grid>
 </Window>

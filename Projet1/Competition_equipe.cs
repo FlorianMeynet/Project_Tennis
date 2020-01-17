@@ -22,7 +22,7 @@ namespace Projet1
             this.resultat_match = null;
         }
 
-        public Competition_equipe(int ns,int nd, List<Match_simple> l_s,List<Match_double> l_d, List<char> r,string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, int niv, int nb_j_m,int annee_min, int annee_max,DateTime date_debut) : base(l, l_e,nb_j, n, niv, nb_j_m, annee_min, annee_max, date_debut)
+        public Competition_equipe(int ns,int nd, List<Match_simple> l_s,List<Match_double> l_d, List<char> r,string l, List<Joueur_competition> l_e, int nb_j, string n, int niv, int nb_j_m,int annee_min, int annee_max,DateTime date_debut) : base(l, l_e,nb_j, n, niv, nb_j_m, annee_min, annee_max, date_debut)
         {
             this.nb_match_simple = ns;
             this.nb_match_double = nd;
@@ -59,7 +59,7 @@ namespace Projet1
 
         public bool Assez_de_joueur()
         {
-            return (this.Nb_joueur >= this.Nb_j_min);
+            return (this.Nb_joueur() >= this.Nb_j_min);
         }
 
         public bool Tous_match_joueur()

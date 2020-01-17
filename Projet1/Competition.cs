@@ -81,12 +81,8 @@ namespace Projet1
             set { this.liste_joueur_ok = value; }
         }
 
-        public int[] Cat_age
-        {
-            get { return (this.cat_age); }
-            set { this.cat_age = value; }
-        }
 
+        
         public int Nb_jours
         {
             get { return (this.nb_jours); }
@@ -114,7 +110,7 @@ namespace Projet1
             {
                 liste_joueur_ok = null;
                 
-                    if (joueur.Age <= cat_age[0] || joueur.Age <= cat_age[1])
+                    if (joueur.Naissance.Year <= this.annee_max || joueur.Naissance.Year >= this.annee_min)
                     {
                         liste_joueur_ok.Add(joueur);
                     joueur.Date_compet.Add(Date);
@@ -122,19 +118,18 @@ namespace Projet1
             }
         }
 
-        public int Nb_joueur
+        public int Nb_joueur()
         {
-            get
+
+            Compatibilite_age();
+            int conteur = 0;
+
+            foreach (Joueur_competition list_joueur in this.liste_joueur_ok)
             {
-                int conteur = 0;
-
-                foreach (Joueur_competition list_joueur in liste_joueur_ok)
-                {
-
-                    conteur ++;
-                }
-                return (conteur);
+                conteur++;
             }
+            return (conteur);
+            
 
 
 
@@ -147,7 +142,7 @@ namespace Projet1
                 affichage_equipe += (j.Nom + "/");
             }
 
-            return (this.Nom+"      "+this.lieu+"    "+this.Nb_j_min+"       "+this.Classement_max+"       " + affichage_equipe + "       "+this.Annee_min +"/"+this.Annee_max+"          "+this.Nb_jours);
+            return (this.Nom+"      "+this.lieu+ "                  " + this.Nb_j_min+"                   "+this.Classement_max+"                       " + affichage_equipe + "                     "+this.Annee_min +"/"+this.Annee_max+"          "+this.Nb_jours);
         }
 
         public int CompareTo(Object val)
