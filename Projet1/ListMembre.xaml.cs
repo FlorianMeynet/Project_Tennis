@@ -281,5 +281,7 @@ namespace Projet1
 
             lise.Text = affichage;
         }
+
+
     }
 }
