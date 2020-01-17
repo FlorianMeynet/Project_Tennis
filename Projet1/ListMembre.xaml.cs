@@ -176,15 +176,12 @@ namespace Projet1
             liste_j.Sort();
             liste_j_l.Sort();
             string affichage = "Joueur Compétition :\n";
-            foreach (Joueur_competition j_c in liste_j)
-            {
-                affichage += j_c.ToString() + "\n";
-            }
+            
+            liste_j.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
+            
             affichage += "\n\n Joueur Loisir :\n";
-            foreach (Joueur_loisir j_l in liste_j_l)
-            {
-                affichage += j_l.ToString() + "\n";
-            }
+
+            liste_j_l.ForEach(x => affichage += x.ToString() + "\n");
             lise.Text = affichage;
         }
 
@@ -197,15 +194,12 @@ namespace Projet1
 
             string affichage = "Joueur Compétition \n";
 
-            foreach (Joueur_competition j_c in liste_j)
-            {
-                affichage += j_c.ToString() + "\n";
-            }
+            liste_j.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
+
             affichage += "\n\n Joueur Loisir :\n";
-            foreach (Joueur_loisir j_l in liste_j_l)
-            {
-                affichage += j_l.ToString() + "\n";
-            }
+
+            liste_j_l.ForEach(x => affichage += x.ToString() + "\n");
+
             lise.Text = affichage;
         }
         private void Sexe(object sender, RoutedEventArgs e)
@@ -217,15 +211,12 @@ namespace Projet1
 
             string affichage = "Joueur Compétition \n";
 
-            foreach (Joueur_competition j_c in liste_j)
-            {
-                affichage += j_c.ToString() + "\n";
-            }
-            affichage += "\n\n Joueur Loisir :";
-            foreach (Joueur_loisir j_l in liste_j_l)
-            {
-                affichage += j_l.ToString() + "\n";
-            }
+            liste_j.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
+
+            affichage += "\n\n Joueur Loisir :\n";
+
+            liste_j_l.ForEach(x => affichage += x.ToString() + "\n");
+
             lise.Text = affichage;
         }
         private void Naissance(object sender, RoutedEventArgs e)
@@ -237,15 +228,12 @@ namespace Projet1
 
             string affichage = "Joueur Compétition \n";
 
-            foreach (Joueur_competition j_c in liste_j)
-            {
-                affichage += j_c.ToString() + "\n";
-            }
+            liste_j.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
+
             affichage += "\n\n Joueur Loisir :\n";
-            foreach (Joueur_loisir j_l in liste_j_l)
-            {
-                affichage += j_l.ToString() + "\n";
-            }
+
+            liste_j_l.ForEach(x => affichage += x.ToString() + "\n");
+
             lise.Text = affichage;
         }
         private void Paiement(object sender, RoutedEventArgs e)
@@ -257,15 +245,12 @@ namespace Projet1
 
             string affichage = "Joueur Compétition : \n";
 
-            foreach (Joueur_competition j_c in liste_j)
-            {
-                affichage += j_c.ToString() + "\n";
-            }
+            liste_j.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
+
             affichage += "\n\n Joueur Loisir :\n";
-            foreach (Joueur_loisir j_l in liste_j_l)
-            {
-                affichage += j_l.ToString() + "\n";
-            }
+
+            liste_j_l.ForEach(x => affichage += x.ToString() + "\n");
+
             lise.Text = affichage;
         }
 
@@ -275,10 +260,7 @@ namespace Projet1
             liste_j.Sort((x, y) => Joueur_competition.CompareC(x, y));
 
             string affichage = "Joueur Compétition : \n";
-            foreach (Joueur_competition j_c in liste_j)
-            {
-                affichage += j_c.ToString() + "\n";
-            }
+            liste_j.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
             lise.Text = affichage;
         }
         private void Competition(object sender, RoutedEventArgs e)
@@ -286,10 +268,8 @@ namespace Projet1
             string affichage = "";
             List<Joueur_competition> liste_j = Liste_joueur_compet();
 
-            foreach (Joueur_competition j_c in liste_j)
-            {
-                affichage += j_c.ToString() + "\n";
-            }
+            liste_j.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
+
             lise.Text = affichage;
 
         }
@@ -297,10 +277,8 @@ namespace Projet1
         {
             List<Joueur_loisir> liste_j = Liste_joueur_loisir();
             string affichage = "";
-            foreach (Joueur_loisir j_c in liste_j)
-            {
-                affichage += j_c.ToString() + "\n";
-            }
+            liste_j.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
+
             lise.Text = affichage;
         }
     }

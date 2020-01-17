@@ -129,7 +129,6 @@ namespace Projet1
             }
             lise.Text = affichage;
         }
-
         private void Precedent(object sender, RoutedEventArgs e)
         {
             Sattistiques a = new Sattistiques();

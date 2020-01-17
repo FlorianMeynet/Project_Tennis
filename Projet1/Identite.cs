@@ -67,7 +67,7 @@ namespace Projet1
         }
         public override string ToString()
         {
-            return (this.nom + "          "+ this.prenom+ "          " + this.naissance.Day+"/"+ this.naissance.Month + "/" + this.naissance.Year + "          " + this.adresse+ "          " + this.telephone);
+            return (this.nom + "          "+ this.prenom+ "          " + this.naissance.Day+"/"+ this.naissance.Month + "/" + this.naissance.Year + "          " + this.adresse+ "          " +"0"+this.telephone);
         }
 
 
