@@ -116,27 +116,23 @@ namespace Projet1
             List<Joueur_loisir> list_j_l = Liste_joueur_loisir();
             List<Joueur_competition> list_j_c = Liste_joueur_compet();
             string affichage = "Joueur competition du meme age : ";
-            List<Joueur_competition> meme_c=list_j_c.FindAll(x => x.Naissance.Year==date_n.Year);
-            meme_c.ForEach(x => affichage += "\n" + x.Nom + "  " + x.Prenom + "   " + x.Telephone);
-            /**foreach (Joueur_competition j_c in list_j_c)
+            foreach (Joueur_competition j_c in list_j_c)
             {
                 if ((j_c.Naissance.Year == date_n.Year) && (j_c.Nom != nomm) && (j_c.Prenom != pren))
                 {
-                    affichage += "\n" + j_c.Nom + "  " + j_c.Prenom + "   " + j_c.Telephone;
+                    affichage += "\n" + j_c.Nom + "  " + j_c.Prenom + "   " +"0" +j_c.Telephone;
                 }
-            }**/
+            }
 
             affichage += "\n\n\nJoueur loisir du meme age : ";
-            List<Joueur_loisir> meme_l = list_j_l.FindAll(x => x.Naissance.Year == date_n.Year);
-            meme_l.ForEach(x => affichage += "\n" + x.Nom + "  " + x.Prenom + "   " + x.Telephone);
-            /**foreach (Joueur_loisir j_l in list_j_l)
+            foreach (Joueur_loisir j_l in list_j_l)
             {
                 if ((j_l.Naissance.Year == date_n.Year) && (j_l.Nom != nomm) && (j_l.Prenom != pren))
                 {
-                    affichage += "\n" + j_l.Nom + "  " + j_l.Prenom + "   " + j_l.Telephone;
+                    affichage += "\n" + j_l.Nom + "  " + j_l.Prenom + "   " +"0"+ j_l.Telephone;
                 }
             }
-            trouver.Text = affichage;**/
+            trouver.Text = affichage;
 
         }
     }
