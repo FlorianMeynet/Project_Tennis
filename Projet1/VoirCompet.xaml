@@ -14,8 +14,8 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
-        <Image HorizontalAlignment="Left" Height="324" Margin="440,76,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
-        <TextBlock x:Name="lise" HorizontalAlignment="Left" Margin="37,17,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="383" Width="454" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="324" Margin="502,76,-14.4,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
+        <TextBlock x:Name="lise" HorizontalAlignment="Left" Margin="30,121,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="211" Width="533" Foreground="White"/>
 
     </Grid>
 </Window>

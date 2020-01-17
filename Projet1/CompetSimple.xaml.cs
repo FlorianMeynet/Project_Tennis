@@ -76,13 +76,21 @@ namespace Projet1
             Equipe_competition eq = new Equipe_competition(list_adv);
 
             Competition_simple compet_s = new Competition_simple(match,l,list,jour,n,max,min,anne_min,anne_max, date);
-
-            compet_s.Creation_List_Match(eq);
-
-
-
             lire = new StreamWriter(fichier_compet_simple, true);
-            lire.Write("\n"+l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," + match + "," + anne_min+"/"+anne_max+","+jou+"/"+moi+"/"+ann );
+            if (compet_s.Assez_de_joueur())
+            {
+                compet_s.Creation_List_Match(eq);
+                compet_s.Compatibilite_age();
+            }
+            
+              //On verifie que les joueurs peuvent bien jouer et doncc on creer la nouvelle liste des joueurs
+            string affichage = "";
+            foreach(Joueur_competition j in compet_s.Liste_joueur_ok)
+            {
+                affichage += (j.Nom + "/");
+            }
+
+            lire.Write("\n"+l + "," + n + "," + min + "," + max + "," + affichage + "," + jour + "," + match + "," + anne_min+"/"+anne_max+","+jou+"/"+moi+"/"+ann );
             lire.Close();
             Ca_marche a = new Ca_marche();
             a.Show();

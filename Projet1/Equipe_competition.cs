@@ -67,16 +67,7 @@ namespace Projet1
         }
 
 
-        /*public void Ajout_deja_joueur(Joueur_competition b)
-        {
-            list_deja_jouer.Add(b);
-        }
         
-         public List<Joueur_competition> List_deja_jouer
-        {
-            get { return this.list_deja_jouer; }
-            set { this.list_deja_jouer = value; }
-        }*/
 
     }
 }

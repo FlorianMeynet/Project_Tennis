@@ -63,11 +63,7 @@ namespace Projet1
             }
 
             string affichage = "";
-
-            foreach (Competition_simple c_c in liste_c_i)
-            {
-                affichage += c_c.ToString() + "\n";
-            }
+            liste_c_i.ForEach(x => affichage += x.ToString() + "\n");   //Utilisation de delegate avec le Foreach
             lise.Text = affichage;
         }
 

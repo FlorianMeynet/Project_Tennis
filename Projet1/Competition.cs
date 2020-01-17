@@ -117,6 +117,7 @@ namespace Projet1
                     if (joueur.Age <= cat_age[0] || joueur.Age <= cat_age[1])
                     {
                         liste_joueur_ok.Add(joueur);
+                    joueur.Date_compet.Add(Date);
                     }
             }
         }
@@ -136,6 +137,17 @@ namespace Projet1
             }
 
 
+
+        }
+        public override string ToString()
+        {
+            string affichage_equipe = "";
+            foreach(Joueur_competition j in liste_equipe)
+            {
+                affichage_equipe += (j.Nom + "/");
+            }
+
+            return (this.Nom+"      "+this.lieu+"    "+this.Nb_j_min+"       "+this.Classement_max+"       " + affichage_equipe + "       "+this.Annee_min +"/"+this.Annee_max+"          "+this.Nb_jours);   //Utilisation de delegate avec le Foreach
 
         }
     }
