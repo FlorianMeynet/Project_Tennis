@@ -39,16 +39,47 @@ namespace Projet1
 
             string l = lieu.Text;
             string n = nom_compet.Text;
-            string min = nbre_min_joueur.Text;
-            string max = classement_max.Text;
-            string participant = liste_participant.Text;
-            string jour = nbre_jour.Text;
-            string match = nbre_match.Text;
-            string anne_min = annee_min.Text;
-            string anne_max = annee_max.Text;
-            string jou = jourr.Text;
-            string moi = moiss.Text;
-            string ann = anneee.Text;
+            int min = int.Parse(nbre_min_joueur.Text);
+            int max = int.Parse(classement_max.Text);
+            string participant = liste_participant_equipe1.Text;
+            string adversaire = liste_participant_equipe2.Text;
+            int jour = int.Parse(nbre_jour.Text);
+            int match = int.Parse( nbre_match.Text);
+            int anne_min = int.Parse(annee_min.Text);
+            int anne_max = int.Parse(annee_max.Text);
+            int jou = int.Parse(jourr.Text);
+            int moi = int.Parse(moiss.Text);
+            int ann = int.Parse(anneee.Text);
+            DateTime date = new DateTime(ann, moi, jou);
+            List<Joueur_competition> list = new List<Joueur_competition>();
+            string[] list_j = participant.Split('/');
+            string[] list_ad = adversaire.Split('/');
+            List<Joueur_competition> list_j_c = Liste_joueur_compet();
+            List<Joueur_competition> list_adv = new List<Joueur_competition>();
+            foreach (string nom in list_j)
+            {
+                foreach(Joueur_competition j in list_j_c)
+                {
+                    if (nom == j.Nom)
+                    {
+                        list.Add(j);
+                    }
+                }
+
+            }
+            foreach (string name in list_ad)
+            {
+                Joueur_competition joueur = new Joueur_competition(name);
+                list_adv.Add(joueur);
+            }
+
+            Equipe_competition eq = new Equipe_competition(list_adv);
+
+            Competition_simple compet_s = new Competition_simple(match,l,list,jour,n,max,min,anne_min,anne_max, date);
+
+            compet_s.Creation_List_Match(eq);
+
+
 
             lire = new StreamWriter(fichier_compet_simple, true);
             lire.Write("\n"+l + "," + n + "," + min + "," + max + "," + participant + "," + jour + "," + match + "," + anne_min+"/"+anne_max+","+jou+"/"+moi+"/"+ann );
@@ -56,6 +87,103 @@ namespace Projet1
             Ca_marche a = new Ca_marche();
             a.Show();
             this.Close();
+        }
+        private List<Joueur_competition> Liste_joueur_compet()
+        {
+            String[] mots;
+            string fichierMembre_compet = "joueur_compet.txt";
+            List<Joueur_competition> liste_j_c = new List<Joueur_competition>();
+            string[] lignes = File.ReadAllLines(fichierMembre_compet);
+            for (int i = 0; i < lignes.Length; i++)
+            {
+                string ligne_num = lignes[i];
+                mots = ligne_num.Split(',');
+                Joueur_competition j_compet = new Joueur_competition();
+                j_compet.Nom = mots[0];
+                j_compet.Prenom = mots[1];
+                String[] date = mots[2].Split('/');
+                int d_j = int.Parse(date[0]);
+                int d_m = int.Parse(date[1]);
+                int d_a = int.Parse(date[2]);
+
+                DateTime date_n = new DateTime(d_a, d_m, d_j);
+                j_compet.Naissance = (date_n);
+                j_compet.Adresse = mots[3];
+                j_compet.Telephone = long.Parse(mots[4]);
+                if (mots[5] == "F")
+                {
+                    j_compet.Sexe = true;
+                }
+                else
+                {
+                    j_compet.Sexe = false;
+                }
+                j_compet.Ville = mots[6];
+                j_compet.Classement = double.Parse(mots[7]);
+
+                liste_j_c.Add(j_compet);
+            }
+            List<Personnel> liste = Liste_personnel();
+            foreach (Personnel elt in liste)
+            {
+                if (elt.Est_entraineur_joueur)
+                {
+                    liste_j_c.Add(new Joueur_competition(elt.Nom, elt.Prenom, elt.Naissance, elt.Adresse, elt.Telephone, elt.Sexe, elt.Ville, true, -15, 0, 0, 0, 0));
+                }
+            }
+            return (liste_j_c);
+        }
+        private List<Personnel> Liste_personnel()
+        {
+            String[] mots;
+            string fichier_p = "personnel.txt";
+            List<Personnel> liste_p = new List<Personnel>();
+
+            string[] lignes = File.ReadAllLines(fichier_p);
+            for (int i = 0; i < lignes.Length; i++)  //Un retour a la ligne est créé tous le temps
+            {
+                string ligne_num = lignes[i];
+                mots = ligne_num.Split(',');
+                Personnel p = new Personnel();
+                p.Nom = mots[0];
+                p.Prenom = mots[1];
+                String[] date = mots[2].Split('/');
+                int d_j = int.Parse(date[0]);
+                int d_m = int.Parse(date[1]);
+                int d_a = int.Parse(date[2]);
+
+                DateTime date_n = new DateTime(d_a, d_m, d_j);
+                p.Naissance = (date_n);
+                p.Adresse = mots[3];
+                p.Telephone = long.Parse(mots[4]);
+                if (mots[5] == "F")
+                {
+                    p.Sexe = true;
+                }
+                else
+                {
+                    p.Sexe = false;
+                }
+                p.Ville = mots[6];
+                p.Info_bancaire = mots[7];
+                p.Salaire = int.Parse(mots[8]);
+                String[] date_entree = mots[9].Split('/');
+                int d_jp = int.Parse(date_entree[0]);
+                int d_mp = int.Parse(date_entree[1]);
+                int d_ap = int.Parse(date_entree[2]);
+                DateTime date_e = new DateTime(d_ap, d_mp, d_jp);
+                p.Date_entree = date_e;
+                if (mots[10] == "true")
+                {
+                    p.Est_entraineur_joueur = true;
+                }
+                else
+                {
+                    p.Est_entraineur_joueur = false;
+                }
+                liste_p.Add(p);
+            }
+            return (liste_p);
         }
     }
 }

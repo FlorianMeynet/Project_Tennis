@@ -14,24 +14,24 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
-        <Grid HorizontalAlignment="Left" Height="359" Margin="59,51,0,0" VerticalAlignment="Top" Width="284">
+        <Grid HorizontalAlignment="Left" Height="359" Margin="57,13,0,0" VerticalAlignment="Top" Width="284">
             <TextBox x:Name="lieu" HorizontalAlignment="Left" Height="23" Margin="0,20,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="284" />
             <TextBox x:Name="nom_compet" HorizontalAlignment="Left" Height="23" Margin="0,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
             <TextBox x:Name="classement_max" HorizontalAlignment="Left" Height="23" Margin="0,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" />
-            <TextBox x:Name="liste_participant" HorizontalAlignment="Left" Height="23" Margin="0,225,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="284"/>
-            <TextBox x:Name="nbre_jour"  HorizontalAlignment="Left" Height="23" Margin="0,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
-            <Label Content="Catégorie : " HorizontalAlignment="Left" Margin="-2,248,0,0" VerticalAlignment="Top" Height="30" Width="72" Foreground="White"/>
+            <TextBox x:Name="liste_participant_equipe1" HorizontalAlignment="Left" Height="23" Margin="0,225,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="284"/>
+            <TextBox x:Name="nbre_jour"  HorizontalAlignment="Left" Height="23" Margin="0,373,0,-37" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
+            <Label Content="Catégorie : " HorizontalAlignment="Left" Margin="-2,293,0,0" VerticalAlignment="Top" Height="30" Width="72" Foreground="White"/>
             <TextBox x:Name="nbre_min_joueur" HorizontalAlignment="Left" Height="23" Margin="0,126,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="284"/>
             <Label Content="Nombre minimun de joueur : " HorizontalAlignment="Left" Margin="-5,95,0,0" VerticalAlignment="Top" Height="30" Width="173" Foreground="White"/>
             <Label Content="Nom de la compétition : " HorizontalAlignment="Left" Margin="-5,44,0,0" VerticalAlignment="Top" Height="30" Width="151" Foreground="White"/>
             <Label Content="Lieu : " HorizontalAlignment="Left" Margin="-5,-3,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
             <Label Content="Classement maximum : " HorizontalAlignment="Left" Margin="-5,148,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
-            <Label Content="Liste des participants : " HorizontalAlignment="Left" Margin="-4,198,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
-            <Label Content="Nombre de jours : " HorizontalAlignment="Left" Margin="-3,299,0,0" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
-            <TextBox x:Name="annee_min" HorizontalAlignment="Left" Height="23" Margin="87,275,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="51"/>
-            <TextBox x:Name="annee_max" HorizontalAlignment="Left" Height="23" Margin="227,274,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="51"/>
-            <Label Content="Année Min " HorizontalAlignment="Left" Margin="12,273,0,0" VerticalAlignment="Top" Height="30" Width="72" Foreground="White"/>
-            <Label Content="Année Max " HorizontalAlignment="Left" Margin="148,273,0,0" VerticalAlignment="Top" Height="30" Width="74" Foreground="White"/>
+            <Label Content="Liste des participants equipe 1 : " HorizontalAlignment="Left" Margin="-4,198,0,0" VerticalAlignment="Top" Height="30" Width="179" Foreground="White"/>
+            <Label Content="Nombre de jours : " HorizontalAlignment="Left" Margin="-3,344,0,-15" VerticalAlignment="Top" Height="30" Width="127" Foreground="White"/>
+            <TextBox x:Name="annee_min" HorizontalAlignment="Left" Height="23" Margin="87,320,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="51"/>
+            <TextBox x:Name="annee_max" HorizontalAlignment="Left" Height="23" Margin="227,319,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="51"/>
+            <Label Content="Année Min " HorizontalAlignment="Left" Margin="12,318,0,0" VerticalAlignment="Top" Height="30" Width="72" Foreground="White"/>
+            <Label Content="Année Max " HorizontalAlignment="Left" Margin="148,318,0,0" VerticalAlignment="Top" Height="30" Width="74" Foreground="White"/>
         </Grid>
         <Button Content="Création de la compétition" HorizontalAlignment="Left" Margin="506,343,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Height="67" Click="Button_Click"/>
         <Label Content="Nombre de match : " HorizontalAlignment="Left" Margin="428,133,0,0" VerticalAlignment="Top" Height="30" Width="120" Foreground="White"/>
@@ -44,6 +44,8 @@
         <Label Content="Jour : " HorizontalAlignment="Left" Margin="425,103,0,0" VerticalAlignment="Top" Height="30" Width="43" Foreground="White"/>
         <Label Content="Mois : " HorizontalAlignment="Left" Margin="537,103,0,0" VerticalAlignment="Top" Height="24" Width="43" Foreground="White"/>
         <Label Content="Année : " HorizontalAlignment="Left" Margin="653,103,0,0" VerticalAlignment="Top" Height="24" Width="43" Foreground="White"/>
+        <TextBox x:Name="liste_participant_equipe2" HorizontalAlignment="Left" Height="23" Margin="57,287,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="284"/>
+        <Label Content="Liste des participants equipe 2 : " HorizontalAlignment="Left" Margin="57,257,0,0" VerticalAlignment="Top" Height="30" Width="179" Foreground="White"/>
 
     </Grid>
 </Window>

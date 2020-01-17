@@ -25,7 +25,7 @@ namespace Projet1
         {
             this.lieu = "";
             this.liste_equipe = null;
-            this.cat_age = null;
+
             this.nb_jours = 0;
             this.nom = "";
             this.classement_max = 0;
@@ -35,11 +35,11 @@ namespace Projet1
 
 
         }
-        public Competition(string l, List<Joueur_competition> l_e, int[] c, int nb_j, string n, double niv, int nb_j_m,int annee_min,int annee_max,DateTime date_debut) : base(date_debut)
+        public Competition(string l, List<Joueur_competition> l_e,int nb_j, string n, int niv, int nb_j_m,int annee_min,int annee_max,DateTime date_debut) : base(date_debut)
         {
             this.lieu = l;
             this.liste_equipe = l_e;
-            this.cat_age = c;
+            
             this.nb_jours = nb_j;
             this.nom = n;
             this.classement_max = niv;
@@ -80,11 +80,13 @@ namespace Projet1
             get { return (this.liste_joueur_ok); }
             set { this.liste_joueur_ok = value; }
         }
+
         public int[] Cat_age
         {
             get { return (this.cat_age); }
             set { this.cat_age = value; }
         }
+
         public int Nb_jours
         {
             get { return (this.nb_jours); }
