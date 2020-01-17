@@ -14,10 +14,10 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button Content="Precedent" HorizontalAlignment="Left" Margin="686,34,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Background="#FFFDFF00" FontFamily="Segoe UI Black" Click="Precedent"/>
-        <Label Content="Match gagnés" HorizontalAlignment="Left" Margin="137,84,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Match joués" HorizontalAlignment="Left" Margin="137,84,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Label Content="Année" HorizontalAlignment="Left" Margin="38,84,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label Content="Match perdus" HorizontalAlignment="Left" Margin="272,82,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Image HorizontalAlignment="Left" Height="324" Margin="440,76,0,0" VerticalAlignment="Top" Width="306" Source="729453.png"/>
+        <TextBlock x:Name="Result" HorizontalAlignment="Left" Height="258" Margin="38,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Foreground="White"/>
 
     </Grid>
 </Window>

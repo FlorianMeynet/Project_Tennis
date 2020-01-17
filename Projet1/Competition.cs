@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet1
 {
-    class Competition : Evenement
+    class Competition : Evenement,IComparable
     {
         private string lieu;
         private List<Joueur_competition> liste_equipe;
@@ -147,8 +147,13 @@ namespace Projet1
                 affichage_equipe += (j.Nom + "/");
             }
 
-            return (this.Nom+"      "+this.lieu+"    "+this.Nb_j_min+"       "+this.Classement_max+"       " + affichage_equipe + "       "+this.Annee_min +"/"+this.Annee_max+"          "+this.Nb_jours);   //Utilisation de delegate avec le Foreach
+            return (this.Nom+"      "+this.lieu+"    "+this.Nb_j_min+"       "+this.Classement_max+"       " + affichage_equipe + "       "+this.Annee_min +"/"+this.Annee_max+"          "+this.Nb_jours);
+        }
 
+        public int CompareTo(Object val)
+        {
+            Competition valA = (Competition)val;
+            return (this.Nom.CompareTo(valA.Nom));
         }
     }
 }

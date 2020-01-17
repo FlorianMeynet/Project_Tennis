@@ -87,9 +87,10 @@
   <Class Name="Projet1.Competition" Collapsed="true">
     <Position X="1.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>YACgAWAAYAAAIEACgAAAIIAAAiAAACICAIAAAACAgAE=</HashCode>
+      <HashCode>YACgAWAAYAAAIEQGgAAAIIAAAiAAACICAIAAAACAgAE=</HashCode>
       <FileName>Competition.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Projet1.Competition_equipe" Collapsed="true">
     <Position X="0.5" Y="5.75" Width="1.5" />
@@ -116,7 +117,7 @@
   <Class Name="Projet1.CompetSimple" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="10" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAAAEAAAAAAAAAAAAAEAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>CompetSimple.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -265,7 +266,7 @@
   <Class Name="Projet1.ResultatClub" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="10" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAQAAAIAAAAQAAAgAAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>ResultatClub.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -273,7 +274,7 @@
   <Class Name="Projet1.Resultatjoueur" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="11.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAACAAAACAACAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAAAECAAAAAAAAAAAAAAACAAAACAACAAAAAAAAA=</HashCode>
       <FileName>Resultatjoueur.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
