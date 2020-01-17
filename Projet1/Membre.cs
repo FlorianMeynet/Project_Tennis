@@ -18,6 +18,13 @@ namespace Projet1
             this.ville = "";
             this.paiement = false;
         }
+        public Membre(string nom): base(nom)
+        {
+            this.sexe = true;
+            this.ville = "";
+            this.paiement = false;
+        }
+        
         public Membre(string nom, string prenom, DateTime naissance, string adresse, long telephone, bool sexe, string ville, bool paiement) : base(nom, prenom, naissance, adresse, telephone)
         {
             this.sexe = sexe;

@@ -48,6 +48,14 @@ namespace Projet1
             this.adresse = "";
             this.telephone = -1;
         }
+        public Identite(string no)
+        {
+            this.nom = no;
+            this.prenom = "";
+            this.naissance = new DateTime();
+            this.adresse = "";
+            this.telephone = -1;
+        }
         public Identite(string nom, string prenom, DateTime naissance, string adresse, long telephone)
         {
             this.nom = nom;
