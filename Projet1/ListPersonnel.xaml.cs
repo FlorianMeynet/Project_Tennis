@@ -46,9 +46,19 @@ namespace Projet1
                 perso.Naissance = date_n;
                 perso.Adresse = mots[3];
                 perso.Telephone = long.Parse(mots[4]);
-                perso.Info_bancaire = mots[5];
-                perso.Salaire = int.Parse(mots[6]);
-                String[] date_e = mots[7].Split('/');
+                if (mots[5]=="F")
+                    {
+                    perso.Sexe = true;
+                        }
+                else
+                {
+                    perso.Sexe = false;
+                }
+                perso.Ville = mots[6];
+                perso.Info_bancaire = mots[7];
+                perso.Salaire = int.Parse(mots[8]);
+                
+                String[] date_e = mots[9].Split('/');
                 int d_ej = int.Parse(date_e[0]);
                 int d_em = int.Parse(date_e[1]);
                 int d_ea = int.Parse(date_e[2]);
